@@ -1,0 +1,21 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: Project X
+  chapters:
+  - file: project_x
+  - file: project_x_script
+- caption: 3D Parts
+  chapters:
+  - file: 3d_parts
+- caption: How To
+  chapters:
+  - file: how_to_git
+  - file: how_to_3D_print
+  - file: how_to_laser_cut
+  - file: how_to_R
+  - file: how_to_Python
+  - file: how_to_use_COLAB
