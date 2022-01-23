@@ -19,7 +19,7 @@ A fully-rendered HTML version of the book will be built in `ACEBook/_build/html/
 
 ### Hosting/Deploying the book online
 
-The html version of the book is hosted on the `gh-pages` branch of this repo, which is then rendered on [link](link). 
+The html version of the book is hosted on the `gh-pages` branch of this repo, which is then rendered on [https://acelab-ur.github.io/ACEBook/](https://acelab-ur.github.io/ACEBook/). 
 
 The following workflow is used to build the book manually:
 
@@ -30,7 +30,7 @@ The following workflow is used to build the book manually:
  
 The last command will automatically push the latest build to the `gh-pages` branch. More information on this hosting process can be found [here](https://jupyterbook.org/publish/gh-pages.html#manually-host-your-book-with-github-pages).
 
-Typically after a few minutes the site should be viewable online at [link](link). If not, check repository settings under Options -> GitHub Pages to ensure that the gh-pages branch is configured as the build source for GitHub Pages.
+Typically after a few minutes the site should be viewable online at [https://acelab-ur.github.io/ACEBook/](https://acelab-ur.github.io/ACEBook/). If not, check repository settings under Options -> GitHub Pages to ensure that the gh-pages branch is configured as the build source for GitHub Pages.
 
 An example command to push all new changes to the git repository is:
 
