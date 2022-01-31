@@ -211,7 +211,7 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/hg816/ACElab"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/ACElab-UR/ACEBook"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         
@@ -233,7 +233,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/hg816/ACElab/main?urlpath=tree/docs/project_x.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ACElab-UR/ACEBook/main?urlpath=tree/docs/project_x.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -292,7 +292,7 @@
 <h2>Load Packages &amp; Data<a class="headerlink" href="#load-packages-data" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">require</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1">#require(package)</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;./Data/Project_X/sample.csv&quot;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
 <span class="nf">head</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">3</span><span class="p">)</span> <span class="c1"># Check the data was correctly loaded</span>
@@ -300,13 +300,6 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: package
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in library(package, lib.loc = lib.loc, character.only = TRUE, logical.return = TRUE, :
-“there is no package called ‘package’”
-</pre></div>
-</div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in read.table(file = file, header = header, sep = sep, quote = quote, :
 “incomplete final line found by readTableHeader on &#39;./Data/Project_X/sample.csv&#39;”
 </pre></div>
