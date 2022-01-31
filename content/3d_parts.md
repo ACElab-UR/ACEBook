@@ -5,11 +5,11 @@
 
 <font size = "+0"> <b> <a href = "../../3D_Parts/sucrose_feeder.stl" download = "sucrose_feeder.stl" style = "color: DarkOrange" > Sucrose Feeder </a> </b> </font>
 
-<font size = "+0"> <b> <a href = "../../3D_Parts/tiny_feeder.stl" download = "tiny_feeder.stl" style = "color: DarkOrange" > Tiny Feeder </a> </b> </font>
+<font size = "+0"> <b> <a href = "../3D_Parts/tiny_feeder.stl" download = "tiny_feeder.stl" style = "color: DarkOrange" > Tiny Feeder </a> </b> </font>
 
 ## Nests
 
-<font size = "+0"> <b> <a href = "../../3D_Parts/nest_tube_holder.stl" download = "nest_tube_holder.stl" style = "color: DarkOrange" > 15mL Falcon Holder </a> </b> </font>
+<font size = "+0"> <b> <a href = "./3D_Parts/nest_tube_holder.stl" download = "nest_tube_holder.stl" style = "color: DarkOrange" > 15mL Falcon Holder </a> </b> </font>
 
 ## Y-Maze Parts
 
