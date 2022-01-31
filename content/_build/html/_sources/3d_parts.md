@@ -1,8 +1,5 @@
 # 3D Printing
 
-https://github.com/ACElab-UR/ACEBook/blob/main/content/3D_Parts/6cm_bridge_vH.stl
-https://acelab-ur.github.io/home/runner/work/ACEBook/ACEBook/content/3D_Parts/water_feeder.stl
-https://acelab-ur.github.io/3D_Parts/sucrose_feeder.stl
 ## Feeders
 
 <font size = "+0"> <b> <a href = "./main/content/3D_Parts/water_feeder.stl" download = "water_feeder.stl" style = "color: DarkOrange" > Water Feeder </a> </b> </font>
@@ -13,7 +10,7 @@ https://acelab-ur.github.io/3D_Parts/sucrose_feeder.stl
 
 ## Nests
 
-<font size = "+0"> <b> <a href = "nest_tube_holder.stl" download = "nest_tube_holder.stl" style = "color: DarkOrange" > 15mL Falcon Holder </a> </b> </font>
+<font size = "+0"> <b> <a href = "https://github.com/ACElab-UR/ACEBook/raw/main/content/3D_Parts/nest_tube_holder.stl" download = "nest_tube_holder.stl" style = "color: DarkOrange" > 15mL Falcon Holder </a> </b> </font>
 
 ## Y-Maze Parts
 
