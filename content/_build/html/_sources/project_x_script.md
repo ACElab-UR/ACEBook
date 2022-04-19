@@ -1,5 +1,0 @@
-# Project X Script
-
-```
-Code
-```
