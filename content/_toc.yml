@@ -4,10 +4,9 @@
 format: jb-book
 root: intro
 parts:
-- caption: Project X
+- caption: ELP.08 - 250ppm Caffeine Side Learning
   chapters:
-  - file: project_x
-  - file: project_x_script
+  - file: ELP_08_analysis
 - caption: 3D Parts
   chapters:
   - file: 3d_parts
