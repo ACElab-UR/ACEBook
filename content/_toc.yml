@@ -4,9 +4,10 @@
 format: jb-book
 root: intro
 parts:
-- caption: ELP.08 - 250ppm Caffeine Side Learning
+- caption: ELP - Y-maze Side Learning
   chapters:
   - file: ELP_08_analysis
+  - file: ELP_09_analysis
 - caption: 3D Parts
   chapters:
   - file: 3d_parts
