@@ -8,6 +8,7 @@ parts:
   chapters:
   - file: ELP_08_analysis
   - file: ELP_09_analysis
+  - file: ELP_10_analysis
 - caption: 3D Parts
   chapters:
   - file: 3d_parts

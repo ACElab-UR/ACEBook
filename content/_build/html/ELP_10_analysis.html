@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ELP.08 - Caffeine Side Learning Y-Maze &#8212; Cognitive Control</title>
+    <title>ELP.10 - GABA Side Learning Y-Maze &#8212; Cognitive Control</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ELP.09 - Octopamine Side Learning Y-Maze" href="ELP_09_analysis.html" />
-    <link rel="prev" title="Welcome to The Animal Comparative Economics Book!" href="intro.html" />
+    <link rel="next" title="3D Printing" href="3d_parts.html" />
+    <link rel="prev" title="ELP.09 - Octopamine Side Learning Y-Maze" href="ELP_09_analysis.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -104,8 +104,8 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ELP_08_analysis.html">
    ELP.08 - Caffeine Side Learning Y-Maze
   </a>
  </li>
@@ -114,8 +114,8 @@ const thebe_selector_output = ".output, .cell_output"
    ELP.09 - Octopamine Side Learning Y-Maze
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ELP_10_analysis.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    ELP.10 - GABA Side Learning Y-Maze
   </a>
  </li>
@@ -209,7 +209,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/ELP_08_analysis.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/ELP_10_analysis.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -247,7 +247,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/ACElab-UR/ACEBook/main?urlpath=tree/docs/ELP_08_analysis.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ACElab-UR/ACEBook/main?urlpath=tree/docs/ELP_10_analysis.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -382,7 +382,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>ELP.08 - Caffeine Side Learning Y-Maze</h1>
+                <h1>ELP.10 - GABA Side Learning Y-Maze</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -504,8 +504,8 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="elp-08-caffeine-side-learning-y-maze">
-<h1>ELP.08 - Caffeine Side Learning Y-Maze<a class="headerlink" href="#elp-08-caffeine-side-learning-y-maze" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="elp-10-gaba-side-learning-y-maze">
+<h1>ELP.10 - GABA Side Learning Y-Maze<a class="headerlink" href="#elp-10-gaba-side-learning-y-maze" title="Permalink to this headline">¶</a></h1>
 <hr style="border:2px solid gray"> </hr>
 <p><strong>Author:</strong> Henrique Galante | <a class="reference external" href="mailto:henrique&#46;galante&#37;&#52;&#48;ur&#46;de">henrique<span>&#46;</span>galante<span>&#64;</span>ur<span>&#46;</span>de</a></p>
 <p><strong>Last Updated:</strong> April 2022</p>
@@ -580,20 +580,20 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Load data<a class="headerlink" href="#load-data" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_08</span> <span class="o">=</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;./Data/ELP_08_caffeine_side_learning_Y_maze.csv&quot;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&quot;;&quot;</span><span class="p">)</span>
-<span class="nf">head</span><span class="p">(</span><span class="n">ELP_08</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="c1"># Check if data was imported correctly</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_10</span> <span class="o">=</span> <span class="nf">read.csv</span><span class="p">(</span><span class="s">&quot;./Data/ELP_10_GABA_side_learning_Y_maze.csv&quot;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&quot;;&quot;</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">ELP_10</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="c1"># Check if data was imported correctly</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message in file(file, &quot;rt&quot;):
-“cannot open file &#39;./Data/ELP_08_caffeine_side_learning_Y_maze.csv&#39;: No such file or directory”
+“cannot open file &#39;./Data/ELP_10_GABA_side_learning_Y_maze.csv&#39;: No such file or directory”
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="n">Error</span> <span class="ow">in</span> <span class="n">file</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="s2">&quot;rt&quot;</span><span class="p">):</span> <span class="n">cannot</span> <span class="nb">open</span> <span class="n">the</span> <span class="n">connection</span>
 <span class="ne">Traceback</span>:
 
-<span class="mi">1</span><span class="o">.</span> <span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s2">&quot;./Data/ELP_08_caffeine_side_learning_Y_maze.csv&quot;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
+<span class="mi">1</span><span class="o">.</span> <span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s2">&quot;./Data/ELP_10_GABA_side_learning_Y_maze.csv&quot;</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> 
  <span class="o">.</span>     <span class="n">stringsAsFactors</span> <span class="o">=</span> <span class="n">FALSE</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s2">&quot;;&quot;</span><span class="p">)</span>
 <span class="mi">2</span><span class="o">.</span> <span class="n">read</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="n">file</span> <span class="o">=</span> <span class="n">file</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="n">header</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="n">sep</span><span class="p">,</span> <span class="n">quote</span> <span class="o">=</span> <span class="n">quote</span><span class="p">,</span> 
  <span class="o">.</span>     <span class="n">dec</span> <span class="o">=</span> <span class="n">dec</span><span class="p">,</span> <span class="n">fill</span> <span class="o">=</span> <span class="n">fill</span><span class="p">,</span> <span class="n">comment</span><span class="o">.</span><span class="n">char</span> <span class="o">=</span> <span class="n">comment</span><span class="o">.</span><span class="n">char</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
@@ -688,7 +688,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Unblind the solutions<a class="headerlink" href="#unblind-the-solutions" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span> <span class="o">==</span> <span class="s">&quot;B&quot;</span><span class="p">,</span> <span class="s">&quot;250ppm Caffeine&quot;</span><span class="p">,</span> <span class="s">&quot;Control&quot;</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span> <span class="o">==</span> <span class="s">&quot;G&quot;</span><span class="p">,</span> <span class="s">&quot;0.734mM GABA&quot;</span><span class="p">,</span> <span class="s">&quot;Control&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -698,30 +698,30 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Get a binary (right/wrong) initial and final decision and check how many ants switched between their initial and final decision<a class="headerlink" href="#get-a-binary-right-wrong-initial-and-final-decision-and-check-how-many-ants-switched-between-their-initial-and-final-decision" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Initial_Decision</span> <span class="o">==</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Final_Decision_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Final_Decision</span> <span class="o">==</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Switched_Decision_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span> <span class="o">==</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Final_Decision_Binary</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span>
-<span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Ants switched their final decision in &quot;</span><span class="p">,</span> <span class="nf">round</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Switched_Decision_Binary</span><span class="p">)</span> <span class="o">/</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">ELP_08</span><span class="p">)</span> <span class="o">*</span> <span class="m">100</span><span class="p">,</span> <span class="m">0</span><span class="p">),</span> <span class="s">&quot;% of the visits!&quot;</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Initial_Decision</span> <span class="o">==</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Final_Decision_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Final_Decision</span> <span class="o">==</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Switched_Decision_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span> <span class="o">==</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Final_Decision_Binary</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span>
+<span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Ants switched their final decision in &quot;</span><span class="p">,</span> <span class="nf">round</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Switched_Decision_Binary</span><span class="p">)</span> <span class="o">/</span> <span class="nf">nrow</span><span class="p">(</span><span class="n">ELP_10</span><span class="p">)</span> <span class="o">*</span> <span class="m">100</span><span class="p">,</span> <span class="m">0</span><span class="p">),</span> <span class="s">&quot;% of the visits!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html">'Ants switched their final decision in 4% of the visits!'</div></div>
+<div class="output text_html">'Ants switched their final decision in 2% of the visits!'</div></div>
 </div>
 </div>
 <div class="section" id="sample-size-per-solution-per-side">
 <h3>Sample size per solution per side<a class="headerlink" href="#sample-size-per-solution-per-side" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">table</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">)</span> <span class="o">/</span> <span class="m">4</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">table</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">)</span> <span class="o">/</span> <span class="m">4</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                 
-                   L  R
-  250ppm Caffeine 24 24
-  Control         25 24
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>              
+                L  R
+  0.734mM GABA 16 16
+  Control      16 16
 </pre></div>
 </div>
 </div>
@@ -731,15 +731,15 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Ensure that the Bridge_Nest_Duration for visit 2 is the same as the time since marking for visit 2<a class="headerlink" href="#ensure-that-the-bridge-nest-duration-for-visit-2-is-the-same-as-the-time-since-marking-for-visit-2" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">nrow</span><span class="p">(</span><span class="n">ELP_08</span><span class="p">))</span> <span class="p">{</span>
-  <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Visit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;2&quot;</span> <span class="o">&amp;</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="p">{</span>
-    <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
-      <span class="nf">print</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Warning: Row &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">&quot; was changed from &quot;</span><span class="p">,</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;s to &quot;</span><span class="p">,</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;s!&quot;</span><span class="p">))</span>
-      <span class="n">ELP_08</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">nrow</span><span class="p">(</span><span class="n">ELP_10</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nf">if </span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Visit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;2&quot;</span> <span class="o">&amp;</span> <span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
+      <span class="nf">print</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Warning: Row &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">&quot; was changed from &quot;</span><span class="p">,</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;s to &quot;</span><span class="p">,</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="s">&quot;s!&quot;</span><span class="p">))</span>
+      <span class="n">ELP_10</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="p">}</span>
   <span class="p">}</span>
-  <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Visit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;2&quot;</span> <span class="o">&amp;</span> <span class="nf">is.na</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="p">{</span>
-    <span class="n">ELP_08</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+  <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Visit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s">&quot;2&quot;</span> <span class="o">&amp;</span> <span class="nf">is.na</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="p">{</span>
+    <span class="n">ELP_10</span><span class="o">$</span><span class="n">Bridge_Nest_Duration</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
     <span class="nf">print</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;Warning: Row &quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s">&quot; was changed and Bridge_Nest_Duration was NA!&quot;</span><span class="p">))</span>
   <span class="p">}</span>
 <span class="p">}</span>
@@ -747,62 +747,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] &quot;Warning: Row 1 was changed from 520s to 592s!&quot;
-[1] &quot;Warning: Row 5 was changed from 2651s to 2722s!&quot;
-[1] &quot;Warning: Row 9 was changed from 283s to 620s!&quot;
-[1] &quot;Warning: Row 13 was changed and Bridge_Nest_Duration was NA!&quot;
-[1] &quot;Warning: Row 17 was changed and Bridge_Nest_Duration was NA!&quot;
-[1] &quot;Warning: Row 21 was changed and Bridge_Nest_Duration was NA!&quot;
-[1] &quot;Warning: Row 25 was changed from 316s to 774s!&quot;
-[1] &quot;Warning: Row 29 was changed from 897s to 1327s!&quot;
-[1] &quot;Warning: Row 33 was changed and Bridge_Nest_Duration was NA!&quot;
-[1] &quot;Warning: Row 37 was changed from 900s to 1623s!&quot;
-[1] &quot;Warning: Row 41 was changed from 4860s to 5621s!&quot;
-[1] &quot;Warning: Row 45 was changed from 279s to 553s!&quot;
-[1] &quot;Warning: Row 49 was changed from 6420s to 6711s!&quot;
-[1] &quot;Warning: Row 53 was changed from 1260s to 1577s!&quot;
-[1] &quot;Warning: Row 57 was changed from 5940s to 5945s!&quot;
-[1] &quot;Warning: Row 61 was changed from 226s to 582s!&quot;
-[1] &quot;Warning: Row 65 was changed from 2760s to 3179s!&quot;
-[1] &quot;Warning: Row 69 was changed from 6000s to 6365s!&quot;
-[1] &quot;Warning: Row 73 was changed from 420s to 771s!&quot;
-[1] &quot;Warning: Row 77 was changed from 2580s to 2904s!&quot;
-[1] &quot;Warning: Row 81 was changed from 6120s to 6467s!&quot;
-[1] &quot;Warning: Row 85 was changed from 312s to 456s!&quot;
-[1] &quot;Warning: Row 89 was changed from 2760s to 2908s!&quot;
-[1] &quot;Warning: Row 93 was changed from 5460s to 5615s!&quot;
-[1] &quot;Warning: Row 97 was changed from 300s to 591s!&quot;
-[1] &quot;Warning: Row 101 was changed from 3120s to 3431s!&quot;
-[1] &quot;Warning: Row 105 was changed from 7020s to 7360s!&quot;
-[1] &quot;Warning: Row 109 was changed from 8580s to 8939s!&quot;
-[1] &quot;Warning: Row 113 was changed from 600s to 814s!&quot;
-[1] &quot;Warning: Row 117 was changed from 3540s to 3737s!&quot;
-[1] &quot;Warning: Row 121 was changed from 270s to 565s!&quot;
-[1] &quot;Warning: Row 125 was changed from 2730s to 3038s!&quot;
-[1] &quot;Warning: Row 129 was changed from 5010s to 5310s!&quot;
-[1] &quot;Warning: Row 133 was changed from 1260s to 1449s!&quot;
-[1] &quot;Warning: Row 137 was changed from 4860s to 5051s!&quot;
-[1] &quot;Warning: Row 141 was changed from 9180s to 9373s!&quot;
-[1] &quot;Warning: Row 197 was changed from 605s to 840s!&quot;
-[1] &quot;Warning: Row 201 was changed from 7236s to 2400s!&quot;
-[1] &quot;Warning: Row 205 was changed from 2191s to 4200s!&quot;
-[1] &quot;Warning: Row 209 was changed from 594s to 1320s!&quot;
-[1] &quot;Warning: Row 213 was changed from 4800s to 5220s!&quot;
-[1] &quot;Warning: Row 217 was changed from 376s to 1440s!&quot;
-[1] &quot;Warning: Row 221 was changed from 1080s to 1500s!&quot;
-[1] &quot;Warning: Row 225 was changed from 4200s to 5700s!&quot;
-[1] &quot;Warning: Row 229 was changed from 796s to 1800s!&quot;
-[1] &quot;Warning: Row 233 was changed from 5100s to 4500s!&quot;
-[1] &quot;Warning: Row 237 was changed from 331s to 780s!&quot;
-[1] &quot;Warning: Row 241 was changed from 520s to 480s!&quot;
-[1] &quot;Warning: Row 245 was changed from 389s to 1200s!&quot;
-[1] &quot;Warning: Row 253 was changed from 842s to 960s!&quot;
-[1] &quot;Warning: Row 261 was changed from 367s to 420s!&quot;
-[1] &quot;Warning: Row 269 was changed from 1072s to 1020s!&quot;
-[1] &quot;Warning: Row 273 was changed from 36s to 3360s!&quot;
-[1] &quot;Warning: Row 277 was changed from 474s to 1200s!&quot;
-[1] &quot;Warning: Row 281 was changed from 1115s to 1080s!&quot;
-[1] &quot;Warning: Row 353 was changed from 5460s to 6360s!&quot;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1] &quot;Warning: Row 245 was changed from 2700s to 2580s!&quot;
 </pre></div>
 </div>
 </div>
@@ -812,21 +757,12 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Create time intervals to group replicates based on time since marking<a class="headerlink" href="#create-time-intervals-to-group-replicates-based-on-time-since-marking" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">nrow</span><span class="p">(</span><span class="n">ELP_08</span><span class="p">))</span> <span class="p">{</span>
-  <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="m">1800</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;0-30&quot;</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="m">1</span><span class="o">:</span><span class="nf">nrow</span><span class="p">(</span><span class="n">ELP_10</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nf">if </span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="m">1800</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ELP_10</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;0-30&quot;</span>
   <span class="p">}</span>
-  <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="m">1800</span> <span class="o">&amp;</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="m">3600</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;30-60&quot;</span>
-  <span class="p">}</span>
-  <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="m">3600</span> <span class="o">&amp;</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="m">5400</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;60-90&quot;</span>
-  <span class="p">}</span>
-  <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="m">5400</span> <span class="o">&amp;</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="m">7200</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;90-120&quot;</span>
-  <span class="p">}</span>
-  <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="m">7200</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;120+&quot;</span>
+  <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="m">1800</span> <span class="o">&amp;</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Since_Marking</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="m">3600</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">ELP_10</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;30-60&quot;</span>
   <span class="p">}</span>
   <span class="n">else</span> <span class="p">{</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">&quot;Warning: Undefined bins!&quot;</span><span class="p">)</span>
@@ -841,24 +777,24 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Sample size per solution per time bin and per side<a class="headerlink" href="#sample-size-per-solution-per-time-bin-and-per-side" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">table</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">,</span> <span class="n">ELP_08</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">)</span> <span class="o">/</span> <span class="m">4</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">table</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">,</span> <span class="n">ELP_10</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">)</span> <span class="o">/</span> <span class="m">4</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>, ,  = L
 
-                 
-                  0-30 120+ 30-60 60-90 90-120
-  250ppm Caffeine    8    3     5     4      4
-  Control            8    5     4     3      5
+              
+               0-30 30-60
+  0.734mM GABA    8     8
+  Control         8     8
 
 , ,  = R
 
-                 
-                  0-30 120+ 30-60 60-90 90-120
-  250ppm Caffeine    8    4     3     5      4
-  Control            8    5     4     3      4
+              
+               0-30 30-60
+  0.734mM GABA    8     8
+  Control         8     8
 </pre></div>
 </div>
 </div>
@@ -868,21 +804,21 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>Ensure relevant columns are factors<a class="headerlink" href="#ensure-relevant-columns-are-factors" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Collection_Date</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Collection_Date</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Collection</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Time_Collection</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Experimentor</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Experimentor</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Starvation_Period</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Starvation_Period</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Donor_Colony</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Donor_Colony</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Recipient_Colony</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Recipient_Colony</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Collection_Date</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Collection_Date</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Collection</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Time_Collection</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Experimentor</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Experimentor</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Starvation_Period</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Starvation_Period</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Donor_Colony</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Donor_Colony</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Recipient_Colony</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Recipient_Colony</span><span class="p">)</span>
 
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Visit</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Visit</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">relevel</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="s">&quot;Control&quot;</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Reward_Side</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Visit</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Visit</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">relevel</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="s">&quot;Control&quot;</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Reward_Side</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">TSM_Bin</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">TSM_Bin</span><span class="p">)</span>
 
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span><span class="p">)</span>
-<span class="n">ELP_08</span><span class="o">$</span><span class="n">Final_Decision_Binary</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_08</span><span class="o">$</span><span class="n">Final_Decision_Binary</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Initial_Decision_Binary</span><span class="p">)</span>
+<span class="n">ELP_10</span><span class="o">$</span><span class="n">Final_Decision_Binary</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_10</span><span class="o">$</span><span class="n">Final_Decision_Binary</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -898,7 +834,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h4>Do initial and final choices differ significantly?<a class="headerlink" href="#do-initial-and-final-choices-differ-significantly" title="Permalink to this headline">¶</a></h4>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">initial_final_diff</span> <span class="o">=</span> <span class="nf">melt</span><span class="p">(</span><span class="n">ELP_08</span><span class="p">,</span> <span class="n">measure.vars</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Initial_Decision_Binary&quot;</span><span class="p">,</span> <span class="s">&quot;Final_Decision_Binary&quot;</span><span class="p">))</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">initial_final_diff</span> <span class="o">=</span> <span class="nf">melt</span><span class="p">(</span><span class="n">ELP_10</span><span class="p">,</span> <span class="n">measure.vars</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Initial_Decision_Binary&quot;</span><span class="p">,</span> <span class="s">&quot;Final_Decision_Binary&quot;</span><span class="p">))</span>
 <span class="n">initial_final_diff</span><span class="o">$</span><span class="n">value</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">initial_final_diff</span><span class="o">$</span><span class="n">value</span><span class="p">)</span>
 <span class="nf">head</span><span class="p">(</span><span class="n">initial_final_diff</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="c1"># Check if data was imported correctly</span>
 </pre></div>
@@ -912,14 +848,14 @@ const thebe_selector_output = ".output, .cell_output"
 	<tr><th></th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>⋯</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>1</th><td>18.03.22</td><td>09:45</td><td>Stefanie Kau</td><td>24,3</td><td>26th January - Spain</td><td>4-days</td><td>35</td><td>36</td><td>1</td><td>2</td><td>⋯</td><td>61</td><td>20</td><td>592</td><td>10,5</td><td>NA</td><td>No</td><td>0</td><td>0-30</td><td>Initial_Decision_Binary</td><td>0</td></tr>
+	<tr><th scope=row>1</th><td>11.04.22</td><td>09:00</td><td>Laura Neubauer</td><td>23,9</td><td>5th November - Spain</td><td>4-days</td><td>32</td><td>29</td><td>1</td><td>2</td><td>⋯</td><td>56</td><td>11</td><td>500</td><td>9,8</td><td>NA</td><td>NA</td><td>0</td><td>0-30</td><td>Initial_Decision_Binary</td><td>1</td></tr>
 </tbody>
 </table>
 </div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">diff_model</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">value</span> <span class="o">~</span> <span class="n">variable</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Starvation_Period</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Experimentor</span><span class="o">/</span><span class="n">Collection_Date</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">initial_final_diff</span><span class="p">,</span><span class="n">family</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">diff_model</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">value</span> <span class="o">~</span> <span class="n">variable</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Starvation_Period</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">initial_final_diff</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
 <span class="nf">Anova</span><span class="p">(</span><span class="n">diff_model</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -935,7 +871,7 @@ const thebe_selector_output = ".output, .cell_output"
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>variable</th><td>0.5008821</td><td>1</td><td>0.4791128</td></tr>
+	<tr><th scope=row>variable</th><td>0.07752936</td><td>1</td><td>0.7806739</td></tr>
 </tbody>
 </table>
 </div></div>
@@ -948,10 +884,10 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> contrast                                        odds.ratio   SE  df null
- Initial_Decision_Binary / Final_Decision_Binary      0.895 0.14 Inf    1
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> contrast                                        odds.ratio    SE  df null
+ Initial_Decision_Binary / Final_Decision_Binary       0.95 0.176 Inf    1
  z.ratio p.value
-  -0.708  0.4791
+  -0.278  0.7807
 
 Tests are performed on the log odds ratio scale 
 </pre></div>
@@ -970,8 +906,8 @@ Tests are performed on the log odds ratio scale
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod1</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">Final_Decision_Binary</span> <span class="o">~</span> <span class="p">(</span><span class="n">Reward_Side</span> <span class="o">+</span> <span class="n">Solution</span> <span class="o">+</span> <span class="n">TSM_Bin</span> <span class="o">+</span> <span class="n">Visit</span><span class="p">)</span><span class="o">^</span><span class="m">2</span>  <span class="o">+</span>
-               <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Starvation_Period</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Experimentor</span><span class="o">/</span><span class="n">Collection_Date</span><span class="p">),</span> 
-             <span class="n">data</span> <span class="o">=</span> <span class="n">ELP_08</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="s">&quot;binomial&quot;</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+               <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Starvation_Period</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">),</span> 
+             <span class="n">data</span> <span class="o">=</span> <span class="n">ELP_10</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="s">&quot;binomial&quot;</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
 </pre></div>
 </div>
 </div>
@@ -991,7 +927,7 @@ Tests are performed on the log odds ratio scale
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/ELP_08_analysis_29_0.png" src="_images/ELP_08_analysis_29_0.png" />
+<img alt="_images/ELP_10_analysis_29_0.png" src="_images/ELP_10_analysis_29_0.png" />
 </div>
 </div>
 <p>Yes, the diagnostic plots indicate the model is good</p>
@@ -1007,7 +943,7 @@ Tests are performed on the log odds ratio scale
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 37 &gt; 12.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 19 &gt; 12.
 Use print(obj, correlation=TRUE)  or
     vcov(obj)        if you need it
 </pre></div>
@@ -1017,64 +953,44 @@ Use print(obj, correlation=TRUE)  or
  Family: binomial  ( logit )
 Formula: 
 Final_Decision_Binary ~ (Reward_Side + Solution + TSM_Bin + Visit)^2 +  
-    (1 | Starvation_Period) + (1 | Experimentor/Collection_Date)
-   Data: ELP_08
+    (1 | Starvation_Period) + (1 | Collection_Date)
+   Data: ELP_10
 Control: glmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
 
      AIC      BIC   logLik deviance df.resid 
-   514.6    673.0   -217.3    434.6      348 
+   351.0    425.5   -154.5    309.0      235 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--3.9540 -0.8221  0.3942  0.6245  1.5911 
+-2.5117 -1.0267  0.4929  0.7307  1.5404 
 
 Random effects:
- Groups                       Name        Variance Std.Dev.
- Collection_Date:Experimentor (Intercept) 0.3363   0.5799  
- Experimentor                 (Intercept) 0.0000   0.0000  
- Starvation_Period            (Intercept) 0.0000   0.0000  
-Number of obs: 388, groups:  
-Collection_Date:Experimentor, 20; Experimentor, 3; Starvation_Period, 2
+ Groups            Name        Variance Std.Dev.
+ Collection_Date   (Intercept) 0.002901 0.05386 
+ Starvation_Period (Intercept) 0.000000 0.00000 
+Number of obs: 256, groups:  Collection_Date, 8; Starvation_Period, 2
 
 Fixed effects:
-                                      Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                            1.53294    0.68387   2.242 0.024989 *  
-Reward_SideR                          -1.21874    0.68770  -1.772 0.076363 .  
-Solution250ppm Caffeine                0.64058    0.71846   0.892 0.372604    
-TSM_Bin120+                           -0.55633    0.91148  -0.610 0.541623    
-TSM_Bin30-60                          -0.17458    0.92505  -0.189 0.850311    
-TSM_Bin60-90                          -0.08304    1.03966  -0.080 0.936338    
-TSM_Bin90-120                          0.39578    0.93700   0.422 0.672738    
-Visit3                                -1.15277    0.77536  -1.487 0.137080    
-Visit4                                -1.79336    0.77943  -2.301 0.021399 *  
-Visit5                                -0.80825    0.78995  -1.023 0.306229    
-Reward_SideR:Solution250ppm Caffeine   0.22682    0.64516   0.352 0.725165    
-Reward_SideR:TSM_Bin120+              -0.17722    0.80208  -0.221 0.825130    
-Reward_SideR:TSM_Bin30-60              0.06706    0.71363   0.094 0.925131    
-Reward_SideR:TSM_Bin60-90             -0.06955    0.84527  -0.082 0.934425    
-Reward_SideR:TSM_Bin90-120             0.05101    0.74791   0.068 0.945627    
-Reward_SideR:Visit3                    0.99239    0.68167   1.456 0.145442    
-Reward_SideR:Visit4                    0.84676    0.70055   1.209 0.226774    
-Reward_SideR:Visit5                    0.31302    0.70499   0.444 0.657039    
-Solution250ppm Caffeine:TSM_Bin120+   -0.81920    0.81836  -1.001 0.316811    
-Solution250ppm Caffeine:TSM_Bin30-60  -0.28283    0.73595  -0.384 0.700747    
-Solution250ppm Caffeine:TSM_Bin60-90   0.34998    0.82376   0.425 0.670941    
-Solution250ppm Caffeine:TSM_Bin90-120 -1.81700    0.77932  -2.332 0.019726 *  
-Solution250ppm Caffeine:Visit3         0.53993    0.67738   0.797 0.425400    
-Solution250ppm Caffeine:Visit4        -0.95501    0.69071  -1.383 0.166774    
-Solution250ppm Caffeine:Visit5        -0.70304    0.69672  -1.009 0.312941    
-TSM_Bin120+:Visit3                     1.21681    0.98898   1.230 0.218561    
-TSM_Bin30-60:Visit3                    0.11994    1.00277   0.120 0.904791    
-TSM_Bin60-90:Visit3                   -0.12817    1.11014  -0.115 0.908085    
-TSM_Bin90-120:Visit3                  -0.18758    0.96219  -0.195 0.845430    
-TSM_Bin120+:Visit4                     3.79102    1.12166   3.380 0.000725 ***
-TSM_Bin30-60:Visit4                    0.43249    0.98586   0.439 0.660883    
-TSM_Bin60-90:Visit4                    1.36068    1.08807   1.251 0.211098    
-TSM_Bin90-120:Visit4                   2.20128    1.00460   2.191 0.028437 *  
-TSM_Bin120+:Visit5                     1.21945    0.96393   1.265 0.205842    
-TSM_Bin30-60:Visit5                    0.67491    0.98456   0.685 0.493030    
-TSM_Bin60-90:Visit5                    1.47436    1.18767   1.241 0.214459    
-TSM_Bin90-120:Visit5                   2.65570    1.13915   2.331 0.019737 *  
+                                   Estimate Std. Error z value Pr(&gt;|z|)  
+(Intercept)                        0.365297   0.569776   0.641   0.5214  
+Reward_SideR                      -0.385874   0.649668  -0.594   0.5525  
+Solution0.734mM GABA              -1.231902   0.650417  -1.894   0.0582 .
+TSM_Bin30-60                       0.687690   0.663110   1.037   0.2997  
+Visit3                            -0.003129   0.731022  -0.004   0.9966  
+Visit4                             0.232107   0.761651   0.305   0.7606  
+Visit5                             1.048054   0.800852   1.309   0.1906  
+Reward_SideR:Solution0.734mM GABA  0.714812   0.552827   1.293   0.1960  
+Reward_SideR:TSM_Bin30-60         -0.469546   0.554660  -0.847   0.3972  
+Reward_SideR:Visit3                0.124882   0.733412   0.170   0.8648  
+Reward_SideR:Visit4                0.088524   0.784230   0.113   0.9101  
+Reward_SideR:Visit5               -0.400596   0.791674  -0.506   0.6128  
+Solution0.734mM GABA:TSM_Bin30-60  0.168768   0.555387   0.304   0.7612  
+Solution0.734mM GABA:Visit3        0.918711   0.733639   1.252   0.2105  
+Solution0.734mM GABA:Visit4        1.295992   0.786281   1.648   0.0993 .
+Solution0.734mM GABA:Visit5        1.075662   0.786779   1.367   0.1716  
+TSM_Bin30-60:Visit3               -0.132809   0.733617  -0.181   0.8563  
+TSM_Bin30-60:Visit4                0.321502   0.790781   0.407   0.6843  
+TSM_Bin30-60:Visit5               -0.493993   0.785740  -0.629   0.5295  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 optimizer (bobyqa) convergence code: 0 (OK)
@@ -1088,16 +1004,16 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>Reward_Side</th><td> 3.5695647</td><td> 1</td><td>0.05884774</td></tr>
-	<tr><th scope=row>Solution</th><td> 0.1671296</td><td> 1</td><td>0.68267556</td></tr>
-	<tr><th scope=row>TSM_Bin</th><td> 4.7138207</td><td> 4</td><td>0.31794103</td></tr>
-	<tr><th scope=row>Visit</th><td> 3.7498006</td><td> 3</td><td>0.28977941</td></tr>
-	<tr><th scope=row>Reward_Side:Solution</th><td> 0.1235976</td><td> 1</td><td>0.72516493</td></tr>
-	<tr><th scope=row>Reward_Side:TSM_Bin</th><td> 0.1025519</td><td> 4</td><td>0.99872947</td></tr>
-	<tr><th scope=row>Reward_Side:Visit</th><td> 2.7040478</td><td> 3</td><td>0.43953985</td></tr>
-	<tr><th scope=row>Solution:TSM_Bin</th><td> 6.8689703</td><td> 4</td><td>0.14297669</td></tr>
-	<tr><th scope=row>Solution:Visit</th><td> 5.9917677</td><td> 3</td><td>0.11201143</td></tr>
-	<tr><th scope=row>TSM_Bin:Visit</th><td>22.3343667</td><td>12</td><td>0.03393882</td></tr>
+	<tr><th scope=row>Reward_Side</th><td>1.096179e+00</td><td>1</td><td>0.29510625</td></tr>
+	<tr><th scope=row>Solution</th><td>5.188856e-06</td><td>1</td><td>0.99818250</td></tr>
+	<tr><th scope=row>TSM_Bin</th><td>2.535365e+00</td><td>1</td><td>0.11132117</td></tr>
+	<tr><th scope=row>Visit</th><td>1.054584e+01</td><td>3</td><td>0.01445311</td></tr>
+	<tr><th scope=row>Reward_Side:Solution</th><td>1.671884e+00</td><td>1</td><td>0.19600639</td></tr>
+	<tr><th scope=row>Reward_Side:TSM_Bin</th><td>7.166420e-01</td><td>1</td><td>0.39724761</td></tr>
+	<tr><th scope=row>Reward_Side:Visit</th><td>5.165106e-01</td><td>3</td><td>0.91524941</td></tr>
+	<tr><th scope=row>Solution:TSM_Bin</th><td>9.233958e-02</td><td>1</td><td>0.76122367</td></tr>
+	<tr><th scope=row>Solution:Visit</th><td>3.343785e+00</td><td>3</td><td>0.34159495</td></tr>
+	<tr><th scope=row>TSM_Bin:Visit</th><td>9.792710e-01</td><td>3</td><td>0.80626758</td></tr>
 </tbody>
 </table>
 </div><div class="output text_html"><style>
@@ -1110,7 +1026,7 @@ boundary (singular) fit: see ?isSingular
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod2</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod1</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Reward_Side</span><span class="o">:</span><span class="n">TSM_Bin</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod2</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod1</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Reward_Side</span><span class="o">:</span><span class="n">Visit</span><span class="p">)</span>
 <span class="nf">anova</span><span class="p">(</span><span class="n">mod1</span><span class="p">,</span> <span class="n">mod2</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1126,8 +1042,8 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>mod2</th><td>36</td><td>506.6575</td><td>649.2536</td><td>-217.3287</td><td>434.6575</td><td>       NA</td><td>NA</td><td>       NA</td></tr>
-	<tr><th scope=row>mod1</th><td>40</td><td>514.5552</td><td>672.9954</td><td>-217.2776</td><td>434.5552</td><td>0.1023017</td><td> 4</td><td>0.9987356</td></tr>
+	<tr><th scope=row>mod2</th><td>18</td><td>345.5646</td><td>409.3778</td><td>-154.7823</td><td>309.5646</td><td>       NA</td><td>NA</td><td>       NA</td></tr>
+	<tr><th scope=row>mod1</th><td>21</td><td>351.0427</td><td>425.4914</td><td>-154.5214</td><td>309.0427</td><td>0.5219049</td><td> 3</td><td>0.9140533</td></tr>
 </tbody>
 </table>
 </div></div>
@@ -1142,7 +1058,7 @@ boundary (singular) fit: see ?isSingular
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 33 &gt; 12.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 16 &gt; 12.
 Use print(obj, correlation=TRUE)  or
     vcov(obj)        if you need it
 </pre></div>
@@ -1151,62 +1067,43 @@ Use print(obj, correlation=TRUE)  or
   Approximation) [glmerMod]
  Family: binomial  ( logit )
 Formula: Final_Decision_Binary ~ Reward_Side + Solution + TSM_Bin + Visit +  
-    (1 | Starvation_Period) + (1 | Experimentor/Collection_Date) +  
-    Reward_Side:Solution + Reward_Side:Visit + Solution:TSM_Bin +  
-    Solution:Visit + TSM_Bin:Visit
-   Data: ELP_08
+    (1 | Starvation_Period) + (1 | Collection_Date) + Reward_Side:Solution +  
+    Reward_Side:TSM_Bin + Solution:TSM_Bin + Solution:Visit +  
+    TSM_Bin:Visit
+   Data: ELP_10
 Control: glmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
 
      AIC      BIC   logLik deviance df.resid 
-   506.7    649.3   -217.3    434.7      352 
+   345.6    409.4   -154.8    309.6      238 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--3.8962 -0.8289  0.3919  0.6243  1.5454 
+-2.5950 -1.0132  0.5027  0.7134  1.5299 
 
 Random effects:
- Groups                       Name        Variance Std.Dev.
- Collection_Date:Experimentor (Intercept) 0.3515   0.5929  
- Experimentor                 (Intercept) 0.0000   0.0000  
- Starvation_Period            (Intercept) 0.0000   0.0000  
-Number of obs: 388, groups:  
-Collection_Date:Experimentor, 20; Experimentor, 3; Starvation_Period, 2
+ Groups            Name        Variance Std.Dev.
+ Collection_Date   (Intercept) 0.00264  0.05138 
+ Starvation_Period (Intercept) 0.00000  0.00000 
+Number of obs: 256, groups:  Collection_Date, 8; Starvation_Period, 2
 
 Fixed effects:
-                                      Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                             1.5460     0.6498   2.379 0.017343 *  
-Reward_SideR                           -1.2334     0.6038  -2.043 0.041064 *  
-Solution250ppm Caffeine                 0.6390     0.7201   0.887 0.374846    
-TSM_Bin120+                            -0.6513     0.8017  -0.812 0.416580    
-TSM_Bin30-60                           -0.1262     0.8226  -0.153 0.878071    
-TSM_Bin60-90                           -0.1357     0.9067  -0.150 0.881013    
-TSM_Bin90-120                           0.4355     0.8192   0.532 0.594945    
-Visit3                                 -1.1614     0.7750  -1.499 0.133969    
-Visit4                                 -1.8098     0.7745  -2.337 0.019451 *  
-Visit5                                 -0.8122     0.7874  -1.031 0.302362    
-Reward_SideR:Solution250ppm Caffeine    0.2361     0.6482   0.364 0.715664    
-Reward_SideR:Visit3                     0.9999     0.6805   1.469 0.141738    
-Reward_SideR:Visit4                     0.8635     0.6941   1.244 0.213502    
-Reward_SideR:Visit5                     0.3109     0.6996   0.444 0.656794    
-Solution250ppm Caffeine:TSM_Bin120+    -0.8433     0.8049  -1.048 0.294770    
-Solution250ppm Caffeine:TSM_Bin30-60   -0.3044     0.7315  -0.416 0.677332    
-Solution250ppm Caffeine:TSM_Bin60-90    0.3390     0.8169   0.415 0.678160    
-Solution250ppm Caffeine:TSM_Bin90-120  -1.8337     0.7779  -2.357 0.018416 *  
-Solution250ppm Caffeine:Visit3          0.5439     0.6774   0.803 0.422042    
-Solution250ppm Caffeine:Visit4         -0.9530     0.6912  -1.379 0.167930    
-Solution250ppm Caffeine:Visit5         -0.7009     0.6965  -1.006 0.314232    
-TSM_Bin120+:Visit3                      1.2149     0.9837   1.235 0.216818    
-TSM_Bin30-60:Visit3                     0.1151     1.0030   0.115 0.908611    
-TSM_Bin60-90:Visit3                    -0.1210     1.1066  -0.109 0.912900    
-TSM_Bin90-120:Visit3                   -0.1925     0.9622  -0.200 0.841437    
-TSM_Bin120+:Visit4                      3.7809     1.1152   3.390 0.000698 ***
-TSM_Bin30-60:Visit4                     0.4286     0.9855   0.435 0.663621    
-TSM_Bin60-90:Visit4                     1.3722     1.0835   1.266 0.205367    
-TSM_Bin90-120:Visit4                    2.2047     1.0047   2.194 0.028212 *  
-TSM_Bin120+:Visit5                      1.2191     0.9578   1.273 0.203080    
-TSM_Bin30-60:Visit5                     0.6754     0.9869   0.684 0.493735    
-TSM_Bin60-90:Visit5                     1.4804     1.1867   1.247 0.212223    
-TSM_Bin90-120:Visit5                    2.6658     1.1409   2.337 0.019458 *  
+                                  Estimate Std. Error z value Pr(&gt;|z|)  
+(Intercept)                        0.37886    0.51691   0.733   0.4636  
+Reward_SideR                      -0.41350    0.45984  -0.899   0.3685  
+Solution0.734mM GABA              -1.23158    0.64935  -1.897   0.0579 .
+TSM_Bin30-60                       0.69687    0.66311   1.051   0.2933  
+Visit3                             0.06079    0.62439   0.097   0.9224  
+Visit4                             0.27887    0.64190   0.434   0.6640  
+Visit5                             0.82321    0.66271   1.242   0.2142  
+Reward_SideR:Solution0.734mM GABA  0.71717    0.55102   1.302   0.1931  
+Reward_SideR:TSM_Bin30-60         -0.48146    0.55165  -0.873   0.3828  
+Solution0.734mM GABA:TSM_Bin30-60  0.16382    0.55503   0.295   0.7679  
+Solution0.734mM GABA:Visit3        0.91428    0.73420   1.245   0.2130  
+Solution0.734mM GABA:Visit4        1.28801    0.78570   1.639   0.1011  
+Solution0.734mM GABA:Visit5        1.10383    0.78204   1.411   0.1581  
+TSM_Bin30-60:Visit3               -0.12823    0.73441  -0.175   0.8614  
+TSM_Bin30-60:Visit4                0.33002    0.79083   0.417   0.6765  
+TSM_Bin30-60:Visit5               -0.51503    0.78100  -0.659   0.5096  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 optimizer (bobyqa) convergence code: 0 (OK)
@@ -1220,15 +1117,15 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>Reward_Side</th><td> 3.5296753</td><td> 1</td><td>0.06027959</td></tr>
-	<tr><th scope=row>Solution</th><td> 0.1467845</td><td> 1</td><td>0.70162736</td></tr>
-	<tr><th scope=row>TSM_Bin</th><td> 4.7064182</td><td> 4</td><td>0.31876814</td></tr>
-	<tr><th scope=row>Visit</th><td> 3.8563429</td><td> 3</td><td>0.27740017</td></tr>
-	<tr><th scope=row>Reward_Side:Solution</th><td> 0.1326855</td><td> 1</td><td>0.71566367</td></tr>
-	<tr><th scope=row>Reward_Side:Visit</th><td> 2.8160423</td><td> 3</td><td>0.42086587</td></tr>
-	<tr><th scope=row>Solution:TSM_Bin</th><td> 7.0658093</td><td> 4</td><td>0.13245111</td></tr>
-	<tr><th scope=row>Solution:Visit</th><td> 5.9950182</td><td> 3</td><td>0.11185285</td></tr>
-	<tr><th scope=row>TSM_Bin:Visit</th><td>22.4345488</td><td>12</td><td>0.03292852</td></tr>
+	<tr><th scope=row>Reward_Side</th><td>1.118935e+00</td><td>1</td><td>0.29014799</td></tr>
+	<tr><th scope=row>Solution</th><td>2.315431e-05</td><td>1</td><td>0.99616068</td></tr>
+	<tr><th scope=row>TSM_Bin</th><td>2.533223e+00</td><td>1</td><td>0.11147235</td></tr>
+	<tr><th scope=row>Visit</th><td>1.066131e+01</td><td>3</td><td>0.01370563</td></tr>
+	<tr><th scope=row>Reward_Side:Solution</th><td>1.693966e+00</td><td>1</td><td>0.19307902</td></tr>
+	<tr><th scope=row>Reward_Side:TSM_Bin</th><td>7.617143e-01</td><td>1</td><td>0.38279256</td></tr>
+	<tr><th scope=row>Solution:TSM_Bin</th><td>8.711271e-02</td><td>1</td><td>0.76788035</td></tr>
+	<tr><th scope=row>Solution:Visit</th><td>3.372491e+00</td><td>3</td><td>0.33768000</td></tr>
+	<tr><th scope=row>TSM_Bin:Visit</th><td>1.061402e+00</td><td>3</td><td>0.78639900</td></tr>
 </tbody>
 </table>
 </div><div class="output text_html"><style>
@@ -1236,12 +1133,12 @@ boundary (singular) fit: see ?isSingular
 .list-inline>li {display: inline-block}
 .list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
 </style>
-<ol class=list-inline><li>'Reward_Side:Solution'</li><li>'Reward_Side:Visit'</li><li>'Solution:TSM_Bin'</li><li>'Solution:Visit'</li><li>'TSM_Bin:Visit'</li></ol>
+<ol class=list-inline><li>'Reward_Side:Solution'</li><li>'Reward_Side:TSM_Bin'</li><li>'Solution:TSM_Bin'</li><li>'Solution:Visit'</li><li>'TSM_Bin:Visit'</li></ol>
 </div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod3</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod2</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Reward_Side</span><span class="o">:</span><span class="n">Solution</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod3</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod2</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">TSM_Bin</span><span class="o">:</span><span class="n">Visit</span><span class="p">)</span>
 <span class="nf">anova</span><span class="p">(</span><span class="n">mod2</span><span class="p">,</span> <span class="n">mod3</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1257,8 +1154,8 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>mod3</th><td>35</td><td>504.7897</td><td>643.4249</td><td>-217.3949</td><td>434.7897</td><td>       NA</td><td>NA</td><td>       NA</td></tr>
-	<tr><th scope=row>mod2</th><td>36</td><td>506.6575</td><td>649.2536</td><td>-217.3287</td><td>434.6575</td><td>0.1322595</td><td> 1</td><td>0.7161007</td></tr>
+	<tr><th scope=row>mod3</th><td>15</td><td>340.6342</td><td>393.8119</td><td>-155.3171</td><td>310.6342</td><td>      NA</td><td>NA</td><td>       NA</td></tr>
+	<tr><th scope=row>mod2</th><td>18</td><td>345.5646</td><td>409.3778</td><td>-154.7823</td><td>309.5646</td><td>1.069628</td><td> 3</td><td>0.7844107</td></tr>
 </tbody>
 </table>
 </div></div>
@@ -1273,7 +1170,7 @@ boundary (singular) fit: see ?isSingular
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 32 &gt; 12.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 13 &gt; 12.
 Use print(obj, correlation=TRUE)  or
     vcov(obj)        if you need it
 </pre></div>
@@ -1282,60 +1179,39 @@ Use print(obj, correlation=TRUE)  or
   Approximation) [glmerMod]
  Family: binomial  ( logit )
 Formula: Final_Decision_Binary ~ Reward_Side + Solution + TSM_Bin + Visit +  
-    (1 | Starvation_Period) + (1 | Experimentor/Collection_Date) +  
-    Reward_Side:Visit + Solution:TSM_Bin + Solution:Visit + TSM_Bin:Visit
-   Data: ELP_08
+    (1 | Starvation_Period) + (1 | Collection_Date) + Reward_Side:Solution +  
+    Reward_Side:TSM_Bin + Solution:TSM_Bin + Solution:Visit
+   Data: ELP_10
 Control: glmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
 
      AIC      BIC   logLik deviance df.resid 
-   504.8    643.4   -217.4    434.8      353 
+   340.6    393.8   -155.3    310.6      241 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--4.0091 -0.8267  0.3962  0.6349  1.5321 
+-2.2929 -1.0026  0.4820  0.7173  1.4976 
 
 Random effects:
- Groups                       Name        Variance  Std.Dev. 
- Collection_Date:Experimentor (Intercept) 3.541e-01 5.950e-01
- Experimentor                 (Intercept) 0.000e+00 0.000e+00
- Starvation_Period            (Intercept) 4.099e-15 6.402e-08
-Number of obs: 388, groups:  
-Collection_Date:Experimentor, 20; Experimentor, 3; Starvation_Period, 2
+ Groups            Name        Variance Std.Dev.
+ Collection_Date   (Intercept) 0.002029 0.04505 
+ Starvation_Period (Intercept) 0.000000 0.00000 
+Number of obs: 256, groups:  Collection_Date, 8; Starvation_Period, 2
 
 Fixed effects:
-                                      Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                             1.4898     0.6291   2.368 0.017877 *  
-Reward_SideR                           -1.1272     0.5294  -2.129 0.033220 *  
-Solution250ppm Caffeine                 0.7749     0.6185   1.253 0.210253    
-TSM_Bin120+                            -0.6453     0.7996  -0.807 0.419668    
-TSM_Bin30-60                           -0.1243     0.8207  -0.151 0.879644    
-TSM_Bin60-90                           -0.1359     0.9062  -0.150 0.880775    
-TSM_Bin90-120                           0.4375     0.8177   0.535 0.592595    
-Visit3                                 -1.1546     0.7731  -1.493 0.135313    
-Visit4                                 -1.8112     0.7726  -2.344 0.019057 *  
-Visit5                                 -0.8169     0.7846  -1.041 0.297758    
-Reward_SideR:Visit3                     0.9952     0.6804   1.463 0.143553    
-Reward_SideR:Visit4                     0.8738     0.6938   1.259 0.207872    
-Reward_SideR:Visit5                     0.3200     0.6991   0.458 0.647102    
-Solution250ppm Caffeine:TSM_Bin120+    -0.8553     0.8042  -1.064 0.287530    
-Solution250ppm Caffeine:TSM_Bin30-60   -0.3292     0.7282  -0.452 0.651166    
-Solution250ppm Caffeine:TSM_Bin60-90    0.3498     0.8172   0.428 0.668598    
-Solution250ppm Caffeine:TSM_Bin90-120  -1.8489     0.7771  -2.379 0.017350 *  
-Solution250ppm Caffeine:Visit3          0.5319     0.6767   0.786 0.431864    
-Solution250ppm Caffeine:Visit4         -0.9676     0.6902  -1.402 0.160955    
-Solution250ppm Caffeine:Visit5         -0.7077     0.6964  -1.016 0.309492    
-TSM_Bin120+:Visit3                      1.2149     0.9828   1.236 0.216376    
-TSM_Bin30-60:Visit3                     0.1148     1.0022   0.115 0.908816    
-TSM_Bin60-90:Visit3                    -0.1228     1.1071  -0.111 0.911714    
-TSM_Bin90-120:Visit3                   -0.1872     0.9617  -0.195 0.845693    
-TSM_Bin120+:Visit4                      3.7799     1.1152   3.389 0.000701 ***
-TSM_Bin30-60:Visit4                     0.4320     0.9848   0.439 0.660919    
-TSM_Bin60-90:Visit4                     1.3702     1.0843   1.264 0.206312    
-TSM_Bin90-120:Visit4                    2.2097     1.0050   2.199 0.027900 *  
-TSM_Bin120+:Visit5                      1.2182     0.9571   1.273 0.203116    
-TSM_Bin30-60:Visit5                     0.6771     0.9862   0.687 0.492317    
-TSM_Bin60-90:Visit5                     1.4821     1.1875   1.248 0.211987    
-TSM_Bin90-120:Visit5                    2.6719     1.1420   2.340 0.019303 *  
+                                    Estimate Std. Error z value Pr(&gt;|z|)  
+(Intercept)                        4.126e-01  4.713e-01   0.875   0.3813  
+Reward_SideR                      -4.114e-01  4.583e-01  -0.898   0.3694  
+Solution0.734mM GABA              -1.222e+00  6.468e-01  -1.889   0.0588 .
+TSM_Bin30-60                       6.228e-01  4.888e-01   1.274   0.2026  
+Visit3                            -2.180e-06  5.181e-01   0.000   1.0000  
+Visit4                             4.225e-01  5.332e-01   0.792   0.4281  
+Visit5                             5.767e-01  5.417e-01   1.065   0.2871  
+Reward_SideR:Solution0.734mM GABA  7.134e-01  5.498e-01   1.298   0.1944  
+Reward_SideR:TSM_Bin30-60         -4.816e-01  5.506e-01  -0.875   0.3817  
+Solution0.734mM GABA:TSM_Bin30-60  1.579e-01  5.520e-01   0.286   0.7748  
+Solution0.734mM GABA:Visit3        9.101e-01  7.334e-01   1.241   0.2146  
+Solution0.734mM GABA:Visit4        1.264e+00  7.775e-01   1.626   0.1040  
+Solution0.734mM GABA:Visit5        1.110e+00  7.833e-01   1.417   0.1565  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 optimizer (bobyqa) convergence code: 0 (OK)
@@ -1349,14 +1225,14 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>Reward_Side</th><td> 3.5282724</td><td> 1</td><td>0.06033062</td></tr>
-	<tr><th scope=row>Solution</th><td> 0.1444475</td><td> 1</td><td>0.70389902</td></tr>
-	<tr><th scope=row>TSM_Bin</th><td> 4.8068643</td><td> 4</td><td>0.30769453</td></tr>
-	<tr><th scope=row>Visit</th><td> 3.8770039</td><td> 3</td><td>0.27505544</td></tr>
-	<tr><th scope=row>Reward_Side:Visit</th><td> 2.8050354</td><td> 3</td><td>0.42267167</td></tr>
-	<tr><th scope=row>Solution:TSM_Bin</th><td> 7.2042328</td><td> 4</td><td>0.12548110</td></tr>
-	<tr><th scope=row>Solution:Visit</th><td> 6.0174329</td><td> 3</td><td>0.11076515</td></tr>
-	<tr><th scope=row>TSM_Bin:Visit</th><td>22.4326532</td><td>12</td><td>0.03294738</td></tr>
+	<tr><th scope=row>Reward_Side</th><td>1.115180e+00</td><td>1</td><td>0.29095873</td></tr>
+	<tr><th scope=row>Solution</th><td>1.486368e-05</td><td>1</td><td>0.99692389</td></tr>
+	<tr><th scope=row>TSM_Bin</th><td>2.595625e+00</td><td>1</td><td>0.10715917</td></tr>
+	<tr><th scope=row>Visit</th><td>1.095255e+01</td><td>3</td><td>0.01198525</td></tr>
+	<tr><th scope=row>Reward_Side:Solution</th><td>1.683768e+00</td><td>1</td><td>0.19442453</td></tr>
+	<tr><th scope=row>Reward_Side:TSM_Bin</th><td>7.651973e-01</td><td>1</td><td>0.38170692</td></tr>
+	<tr><th scope=row>Solution:TSM_Bin</th><td>8.181823e-02</td><td>1</td><td>0.77484836</td></tr>
+	<tr><th scope=row>Solution:Visit</th><td>3.342149e+00</td><td>3</td><td>0.34181930</td></tr>
 </tbody>
 </table>
 </div><div class="output text_html"><style>
@@ -1364,12 +1240,12 @@ boundary (singular) fit: see ?isSingular
 .list-inline>li {display: inline-block}
 .list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
 </style>
-<ol class=list-inline><li>'Reward_Side:Visit'</li><li>'Solution:TSM_Bin'</li><li>'Solution:Visit'</li><li>'TSM_Bin:Visit'</li></ol>
+<ol class=list-inline><li>'Reward_Side:Solution'</li><li>'Reward_Side:TSM_Bin'</li><li>'Solution:TSM_Bin'</li><li>'Solution:Visit'</li></ol>
 </div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod4</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod3</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Reward_Side</span><span class="o">:</span><span class="n">Visit</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod4</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod3</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Solution</span><span class="o">:</span><span class="n">TSM_Bin</span><span class="p">)</span>
 <span class="nf">anova</span><span class="p">(</span><span class="n">mod3</span><span class="p">,</span> <span class="n">mod4</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1385,8 +1261,8 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>mod4</th><td>32</td><td>501.6215</td><td>628.3737</td><td>-218.8108</td><td>437.6215</td><td>      NA</td><td>NA</td><td>       NA</td></tr>
-	<tr><th scope=row>mod3</th><td>35</td><td>504.7897</td><td>643.4249</td><td>-217.3949</td><td>434.7897</td><td>2.831834</td><td> 3</td><td>0.4182862</td></tr>
+	<tr><th scope=row>mod4</th><td>14</td><td>338.7161</td><td>388.3485</td><td>-155.3580</td><td>310.7161</td><td>       NA</td><td>NA</td><td>       NA</td></tr>
+	<tr><th scope=row>mod3</th><td>15</td><td>340.6342</td><td>393.8119</td><td>-155.3171</td><td>310.6342</td><td>0.0818144</td><td> 1</td><td>0.7748535</td></tr>
 </tbody>
 </table>
 </div></div>
@@ -1401,68 +1277,70 @@ boundary (singular) fit: see ?isSingular
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 29 &gt; 12.
-Use print(obj, correlation=TRUE)  or
-    vcov(obj)        if you need it
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: binomial  ( logit )
 Formula: Final_Decision_Binary ~ Reward_Side + Solution + TSM_Bin + Visit +  
-    (1 | Starvation_Period) + (1 | Experimentor/Collection_Date) +  
-    Solution:TSM_Bin + Solution:Visit + TSM_Bin:Visit
-   Data: ELP_08
+    (1 | Starvation_Period) + (1 | Collection_Date) + Reward_Side:Solution +  
+    Reward_Side:TSM_Bin + Solution:Visit
+   Data: ELP_10
 Control: glmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
 
      AIC      BIC   logLik deviance df.resid 
-   501.6    628.4   -218.8    437.6      356 
+   338.7    388.3   -155.4    310.7      242 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--3.4474 -0.8440  0.4027  0.6315  1.6706 
+-2.3059 -0.9862  0.4923  0.7283  1.4674 
 
 Random effects:
- Groups                       Name        Variance Std.Dev.
- Collection_Date:Experimentor (Intercept) 0.3492   0.5909  
- Experimentor                 (Intercept) 0.0000   0.0000  
- Starvation_Period            (Intercept) 0.0000   0.0000  
-Number of obs: 388, groups:  
-Collection_Date:Experimentor, 20; Experimentor, 3; Starvation_Period, 2
+ Groups            Name        Variance Std.Dev.
+ Collection_Date   (Intercept) 0.003573 0.05977 
+ Starvation_Period (Intercept) 0.000000 0.00000 
+Number of obs: 256, groups:  Collection_Date, 8; Starvation_Period, 2
 
 Fixed effects:
-                                      Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                            1.14929    0.54773   2.098 0.035878 *  
-Reward_SideR                          -0.56482    0.29551  -1.911 0.055958 .  
-Solution250ppm Caffeine                0.75788    0.60840   1.246 0.212879    
-TSM_Bin120+                           -0.60984    0.77398  -0.788 0.430735    
-TSM_Bin30-60                          -0.06846    0.80074  -0.085 0.931871    
-TSM_Bin60-90                          -0.15029    0.89439  -0.168 0.866554    
-TSM_Bin90-120                          0.46878    0.80020   0.586 0.557992    
-Visit3                                -0.58745    0.65794  -0.893 0.371934    
-Visit4                                -1.32277    0.65927  -2.006 0.044811 *  
-Visit5                                -0.60612    0.65461  -0.926 0.354480    
-Solution250ppm Caffeine:TSM_Bin120+   -0.86252    0.79793  -1.081 0.279721    
-Solution250ppm Caffeine:TSM_Bin30-60  -0.32798    0.72537  -0.452 0.651156    
-Solution250ppm Caffeine:TSM_Bin60-90   0.35015    0.81573   0.429 0.667739    
-Solution250ppm Caffeine:TSM_Bin90-120 -1.83560    0.77383  -2.372 0.017687 *  
-Solution250ppm Caffeine:Visit3         0.56396    0.67062   0.841 0.400378    
-Solution250ppm Caffeine:Visit4        -0.95548    0.68380  -1.397 0.162321    
-Solution250ppm Caffeine:Visit5        -0.68814    0.68430  -1.006 0.314598    
-TSM_Bin120+:Visit3                     1.22534    0.97256   1.260 0.207703    
-TSM_Bin30-60:Visit3                    0.02559    0.99286   0.026 0.979435    
-TSM_Bin60-90:Visit3                   -0.09061    1.09989  -0.082 0.934344    
-TSM_Bin90-120:Visit3                  -0.24239    0.95321  -0.254 0.799270    
-TSM_Bin120+:Visit4                     3.82861    1.10404   3.468 0.000525 ***
-TSM_Bin30-60:Visit4                    0.36251    0.97401   0.372 0.709755    
-TSM_Bin60-90:Visit4                    1.42104    1.07864   1.317 0.187691    
-TSM_Bin90-120:Visit4                   2.19564    0.99583   2.205 0.027466 *  
-TSM_Bin120+:Visit5                     1.17223    0.93307   1.256 0.209004    
-TSM_Bin30-60:Visit5                    0.63106    0.96712   0.653 0.514072    
-TSM_Bin60-90:Visit5                    1.46645    1.17603   1.247 0.212414    
-TSM_Bin90-120:Visit5                   2.61025    1.12658   2.317 0.020505 *  
+                                    Estimate Std. Error z value Pr(&gt;|z|)  
+(Intercept)                        3.777e-01  4.551e-01   0.830   0.4066  
+Reward_SideR                      -4.123e-01  4.573e-01  -0.902   0.3672  
+Solution0.734mM GABA              -1.148e+00  5.915e-01  -1.940   0.0523 .
+TSM_Bin30-60                       7.032e-01  4.010e-01   1.753   0.0795 .
+Visit3                            -4.306e-07  5.191e-01   0.000   1.0000  
+Visit4                             4.240e-01  5.341e-01   0.794   0.4272  
+Visit5                             5.787e-01  5.426e-01   1.066   0.2862  
+Reward_SideR:Solution0.734mM GABA  7.201e-01  5.495e-01   1.311   0.1900  
+Reward_SideR:TSM_Bin30-60         -4.897e-01  5.501e-01  -0.890   0.3734  
+Solution0.734mM GABA:Visit3        9.061e-01  7.331e-01   1.236   0.2165  
+Solution0.734mM GABA:Visit4        1.256e+00  7.766e-01   1.617   0.1059  
+Solution0.734mM GABA:Visit5        1.101e+00  7.824e-01   1.407   0.1593  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+               (Intr) Rwr_SR Sl0.734MGABA TSM_B3 Visit3 Visit4 Visit5 R_SR:G
+Reward_SidR    -0.515                                                       
+Sl0.734MGABA   -0.640  0.274                                                
+TSM_Bn30-60    -0.379  0.372 -0.045                                         
+Visit3         -0.570  0.000  0.439        0.000                            
+Visit4         -0.549 -0.014  0.419        0.010  0.486                     
+Visit5         -0.538 -0.019  0.410        0.013  0.478  0.466              
+R_SR:S0.73G     0.302 -0.574 -0.483        0.024  0.000  0.014  0.018       
+R_SR:TSM_B3     0.275 -0.548  0.027       -0.727  0.000 -0.004 -0.005 -0.016
+S0.734MGABA:V3  0.396  0.006 -0.618        0.021 -0.708 -0.344 -0.338  0.002
+S0.734MGABA:V4  0.365  0.019 -0.581        0.028 -0.334 -0.687 -0.319 -0.004
+S0.734MGABA:V5  0.361  0.022 -0.575        0.026 -0.332 -0.322 -0.692 -0.007
+               R_SR:T S0.734MGABA:V3 S0.734MGABA:V4
+Reward_SidR                                        
+Sl0.734MGABA                                       
+TSM_Bn30-60                                        
+Visit3                                             
+Visit4                                             
+Visit5                                             
+R_SR:S0.73G                                        
+R_SR:TSM_B3                                        
+S0.734MGABA:V3 -0.010                              
+S0.734MGABA:V4 -0.014  0.469                       
+S0.734MGABA:V5 -0.014  0.466          0.440        
 optimizer (bobyqa) convergence code: 0 (OK)
 boundary (singular) fit: see ?isSingular
 </pre></div>
@@ -1474,13 +1352,13 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>Reward_Side</th><td> 3.6533024</td><td> 1</td><td>0.05595815</td></tr>
-	<tr><th scope=row>Solution</th><td> 0.1406554</td><td> 1</td><td>0.70763027</td></tr>
-	<tr><th scope=row>TSM_Bin</th><td> 4.8054340</td><td> 4</td><td>0.30784996</td></tr>
-	<tr><th scope=row>Visit</th><td> 4.0150714</td><td> 3</td><td>0.25984128</td></tr>
-	<tr><th scope=row>Solution:TSM_Bin</th><td> 7.1912088</td><td> 4</td><td>0.12612219</td></tr>
-	<tr><th scope=row>Solution:Visit</th><td> 6.0589797</td><td> 3</td><td>0.10877573</td></tr>
-	<tr><th scope=row>TSM_Bin:Visit</th><td>23.0679280</td><td>12</td><td>0.02715476</td></tr>
+	<tr><th scope=row>Reward_Side</th><td>1.116197e+00</td><td>1</td><td>0.29073878</td></tr>
+	<tr><th scope=row>Solution</th><td>2.918093e-05</td><td>1</td><td>0.99568990</td></tr>
+	<tr><th scope=row>TSM_Bin</th><td>2.596981e+00</td><td>1</td><td>0.10706746</td></tr>
+	<tr><th scope=row>Visit</th><td>1.098184e+01</td><td>3</td><td>0.01182451</td></tr>
+	<tr><th scope=row>Reward_Side:Solution</th><td>1.717631e+00</td><td>1</td><td>0.18999828</td></tr>
+	<tr><th scope=row>Reward_Side:TSM_Bin</th><td>7.924731e-01</td><td>1</td><td>0.37335335</td></tr>
+	<tr><th scope=row>Solution:Visit</th><td>3.306312e+00</td><td>3</td><td>0.34676515</td></tr>
 </tbody>
 </table>
 </div><div class="output text_html"><style>
@@ -1488,12 +1366,12 @@ boundary (singular) fit: see ?isSingular
 .list-inline>li {display: inline-block}
 .list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
 </style>
-<ol class=list-inline><li>'Reward_Side'</li><li>'Solution:TSM_Bin'</li><li>'Solution:Visit'</li><li>'TSM_Bin:Visit'</li></ol>
+<ol class=list-inline><li>'Reward_Side:Solution'</li><li>'Reward_Side:TSM_Bin'</li><li>'Solution:Visit'</li></ol>
 </div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod5</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod4</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Solution</span><span class="o">:</span><span class="n">TSM_Bin</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod5</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod4</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Reward_Side</span><span class="o">:</span><span class="n">TSM_Bin</span><span class="p">)</span>
 <span class="nf">anova</span><span class="p">(</span><span class="n">mod4</span><span class="p">,</span> <span class="n">mod5</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1509,8 +1387,8 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>mod5</th><td>28</td><td>501.2437</td><td>612.1519</td><td>-222.6219</td><td>445.2437</td><td>      NA</td><td>NA</td><td>       NA</td></tr>
-	<tr><th scope=row>mod4</th><td>32</td><td>501.6215</td><td>628.3737</td><td>-218.8108</td><td>437.6215</td><td>7.622197</td><td> 4</td><td>0.1064401</td></tr>
+	<tr><th scope=row>mod5</th><td>13</td><td>337.5111</td><td>383.5984</td><td>-155.7556</td><td>311.5111</td><td>       NA</td><td>NA</td><td>       NA</td></tr>
+	<tr><th scope=row>mod4</th><td>14</td><td>338.7161</td><td>388.3485</td><td>-155.3580</td><td>310.7161</td><td>0.7950745</td><td> 1</td><td>0.3725701</td></tr>
 </tbody>
 </table>
 </div></div>
@@ -1525,64 +1403,67 @@ boundary (singular) fit: see ?isSingular
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 25 &gt; 12.
-Use print(obj, correlation=TRUE)  or
-    vcov(obj)        if you need it
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: binomial  ( logit )
 Formula: Final_Decision_Binary ~ Reward_Side + Solution + TSM_Bin + Visit +  
-    (1 | Starvation_Period) + (1 | Experimentor/Collection_Date) +  
-    Solution:Visit + TSM_Bin:Visit
-   Data: ELP_08
+    (1 | Starvation_Period) + (1 | Collection_Date) + Reward_Side:Solution +  
+    Solution:Visit
+   Data: ELP_10
 Control: glmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
 
      AIC      BIC   logLik deviance df.resid 
-   501.2    612.2   -222.6    445.2      360 
+   337.5    383.6   -155.8    311.5      243 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--2.6715 -0.9157  0.4288  0.6414  1.9027 
+-2.1790 -0.9474  0.5054  0.7014  1.3780 
 
 Random effects:
- Groups                       Name        Variance Std.Dev.
- Collection_Date:Experimentor (Intercept) 0.2599   0.5098  
- Experimentor                 (Intercept) 0.0000   0.0000  
- Starvation_Period            (Intercept) 0.0000   0.0000  
-Number of obs: 388, groups:  
-Collection_Date:Experimentor, 20; Experimentor, 3; Starvation_Period, 2
+ Groups            Name        Variance  Std.Dev. 
+ Collection_Date   (Intercept) 5.728e-03 7.569e-02
+ Starvation_Period (Intercept) 1.211e-14 1.100e-07
+Number of obs: 256, groups:  Collection_Date, 8; Starvation_Period, 2
 
 Fixed effects:
-                               Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                      1.3645     0.5214   2.617 0.008875 ** 
-Reward_SideR                    -0.5978     0.2879  -2.076 0.037853 *  
-Solution250ppm Caffeine          0.2801     0.4924   0.569 0.569495    
-TSM_Bin120+                     -0.9981     0.6781  -1.472 0.140999    
-TSM_Bin30-60                    -0.2742     0.7081  -0.387 0.698603    
-TSM_Bin60-90                     0.1012     0.7973   0.127 0.898966    
-TSM_Bin90-120                   -0.4396     0.6839  -0.643 0.520328    
-Visit3                          -0.6007     0.6572  -0.914 0.360694    
-Visit4                          -1.3417     0.6558  -2.046 0.040765 *  
-Visit5                          -0.6534     0.6542  -0.999 0.317897    
-Solution250ppm Caffeine:Visit3   0.5739     0.6588   0.871 0.383665    
-Solution250ppm Caffeine:Visit4  -0.8349     0.6689  -1.248 0.211959    
-Solution250ppm Caffeine:Visit5  -0.5209     0.6679  -0.780 0.435411    
-TSM_Bin120+:Visit3               1.2355     0.9633   1.282 0.199671    
-TSM_Bin30-60:Visit3              0.0374     0.9751   0.038 0.969405    
-TSM_Bin60-90:Visit3             -0.1040     1.0710  -0.097 0.922623    
-TSM_Bin90-120:Visit3            -0.2027     0.9411  -0.215 0.829433    
-TSM_Bin120+:Visit4               3.7425     1.0931   3.424 0.000617 ***
-TSM_Bin30-60:Visit4              0.3502     0.9639   0.363 0.716369    
-TSM_Bin60-90:Visit4              1.4511     1.0683   1.358 0.174384    
-TSM_Bin90-120:Visit4             2.0376     0.9586   2.126 0.033534 *  
-TSM_Bin120+:Visit5               1.1359     0.9234   1.230 0.218622    
-TSM_Bin30-60:Visit5              0.6089     0.9560   0.637 0.524128    
-TSM_Bin60-90:Visit5              1.4714     1.1645   1.264 0.206395    
-TSM_Bin90-120:Visit5             2.3898     1.0882   2.196 0.028091 *  
+                                    Estimate Std. Error z value Pr(&gt;|z|)  
+(Intercept)                        4.913e-01  4.383e-01   1.121   0.2623  
+Reward_SideR                      -6.381e-01  3.815e-01  -1.672   0.0945 .
+Solution0.734mM GABA              -1.138e+00  5.888e-01  -1.933   0.0533 .
+TSM_Bin30-60                       4.459e-01  2.745e-01   1.624   0.1044  
+Visit3                            -2.640e-07  5.185e-01   0.000   1.0000  
+Visit4                             4.235e-01  5.338e-01   0.793   0.4275  
+Visit5                             5.782e-01  5.424e-01   1.066   0.2864  
+Reward_SideR:Solution0.734mM GABA  7.147e-01  5.484e-01   1.303   0.1925  
+Solution0.734mM GABA:Visit3        9.028e-01  7.320e-01   1.233   0.2174  
+Solution0.734mM GABA:Visit4        1.250e+00  7.757e-01   1.612   0.1070  
+Solution0.734mM GABA:Visit5        1.096e+00  7.815e-01   1.402   0.1609  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+               (Intr) Rwr_SR Sl0.734MGABA TSM_B3 Visit3 Visit4 Visit5 R_SR:G
+Reward_SidR    -0.453                                                       
+Sl0.734MGABA   -0.672  0.342                                                
+TSM_Bn30-60    -0.288 -0.020 -0.030                                         
+Visit3         -0.591  0.000  0.440        0.000                            
+Visit4         -0.568 -0.021  0.420        0.012  0.486                     
+Visit5         -0.556 -0.027  0.410        0.015  0.478  0.465              
+R_SR:S0.73G     0.315 -0.696 -0.479        0.015  0.000  0.014  0.019       
+S0.734MGABA:V3  0.414  0.000 -0.620        0.020 -0.708 -0.343 -0.338  0.002
+S0.734MGABA:V4  0.383  0.015 -0.581        0.024 -0.334 -0.687 -0.319 -0.006
+S0.734MGABA:V5  0.378  0.020 -0.575        0.021 -0.332 -0.322 -0.693 -0.009
+               S0.734MGABA:V3 S0.734MGABA:V4
+Reward_SidR                                 
+Sl0.734MGABA                                
+TSM_Bn30-60                                 
+Visit3                                      
+Visit4                                      
+Visit5                                      
+R_SR:S0.73G                                 
+S0.734MGABA:V3                              
+S0.734MGABA:V4  0.469                       
+S0.734MGABA:V5  0.466          0.440        
 optimizer (bobyqa) convergence code: 0 (OK)
 boundary (singular) fit: see ?isSingular
 </pre></div>
@@ -1594,12 +1475,12 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>Reward_Side</th><td> 4.3115961</td><td> 1</td><td>0.03785343</td></tr>
-	<tr><th scope=row>Solution</th><td> 0.1136688</td><td> 1</td><td>0.73600531</td></tr>
-	<tr><th scope=row>TSM_Bin</th><td> 5.4603400</td><td> 4</td><td>0.24323769</td></tr>
-	<tr><th scope=row>Visit</th><td> 3.7634600</td><td> 3</td><td>0.28816505</td></tr>
-	<tr><th scope=row>Solution:Visit</th><td> 5.1625830</td><td> 3</td><td>0.16027186</td></tr>
-	<tr><th scope=row>TSM_Bin:Visit</th><td>22.0586703</td><td>12</td><td>0.03686750</td></tr>
+	<tr><th scope=row>Reward_Side</th><td>1.135711e+00</td><td>1</td><td>0.28656051</td></tr>
+	<tr><th scope=row>Solution</th><td>1.799074e-05</td><td>1</td><td>0.99661574</td></tr>
+	<tr><th scope=row>TSM_Bin</th><td>2.637490e+00</td><td>1</td><td>0.10436832</td></tr>
+	<tr><th scope=row>Visit</th><td>1.096173e+01</td><td>3</td><td>0.01193462</td></tr>
+	<tr><th scope=row>Reward_Side:Solution</th><td>1.698347e+00</td><td>1</td><td>0.19250424</td></tr>
+	<tr><th scope=row>Solution:Visit</th><td>3.286086e+00</td><td>3</td><td>0.34958396</td></tr>
 </tbody>
 </table>
 </div><div class="output text_html"><style>
@@ -1607,7 +1488,7 @@ boundary (singular) fit: see ?isSingular
 .list-inline>li {display: inline-block}
 .list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
 </style>
-<ol class=list-inline><li>'Reward_Side'</li><li>'Solution:Visit'</li><li>'TSM_Bin:Visit'</li></ol>
+<ol class=list-inline><li>'TSM_Bin'</li><li>'Reward_Side:Solution'</li><li>'Solution:Visit'</li></ol>
 </div></div>
 </div>
 <div class="cell docutils container">
@@ -1628,8 +1509,8 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>mod6</th><td>25</td><td>500.4980</td><td>599.5231</td><td>-225.2490</td><td>450.4980</td><td>      NA</td><td>NA</td><td>       NA</td></tr>
-	<tr><th scope=row>mod5</th><td>28</td><td>501.2437</td><td>612.1519</td><td>-222.6219</td><td>445.2437</td><td>5.254228</td><td> 3</td><td>0.1541002</td></tr>
+	<tr><th scope=row>mod6</th><td>10</td><td>334.8483</td><td>370.3001</td><td>-157.4242</td><td>314.8483</td><td>      NA</td><td>NA</td><td>       NA</td></tr>
+	<tr><th scope=row>mod5</th><td>13</td><td>337.5111</td><td>383.5984</td><td>-155.7556</td><td>311.5111</td><td>3.337181</td><td> 3</td><td>0.3425011</td></tr>
 </tbody>
 </table>
 </div></div>
@@ -1644,61 +1525,49 @@ boundary (singular) fit: see ?isSingular
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Correlation matrix not shown by default, as p = 22 &gt; 12.
-Use print(obj, correlation=TRUE)  or
-    vcov(obj)        if you need it
-</pre></div>
-</div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generalized linear mixed model fit by maximum likelihood (Laplace
   Approximation) [glmerMod]
  Family: binomial  ( logit )
 Formula: Final_Decision_Binary ~ Reward_Side + Solution + TSM_Bin + Visit +  
-    (1 | Starvation_Period) + (1 | Experimentor/Collection_Date) +  
-    TSM_Bin:Visit
-   Data: ELP_08
+    (1 | Starvation_Period) + (1 | Collection_Date) + Reward_Side:Solution
+   Data: ELP_10
 Control: glmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
 
      AIC      BIC   logLik deviance df.resid 
-   500.5    599.5   -225.2    450.5      363 
+   334.8    370.3   -157.4    314.8      246 
 
 Scaled residuals: 
     Min      1Q  Median      3Q     Max 
--2.8148 -0.9058  0.4336  0.6758  1.8147 
+-2.3296 -1.0931  0.5382  0.7288  1.3171 
 
 Random effects:
- Groups                       Name        Variance  Std.Dev. 
- Collection_Date:Experimentor (Intercept) 2.510e-01 5.010e-01
- Experimentor                 (Intercept) 1.288e-15 3.589e-08
- Starvation_Period            (Intercept) 0.000e+00 0.000e+00
-Number of obs: 388, groups:  
-Collection_Date:Experimentor, 20; Experimentor, 3; Starvation_Period, 2
+ Groups            Name        Variance Std.Dev.
+ Collection_Date   (Intercept) 0.00299  0.05468 
+ Starvation_Period (Intercept) 0.00000  0.00000 
+Number of obs: 256, groups:  Collection_Date, 8; Starvation_Period, 2
 
 Fixed effects:
-                        Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)              1.44842    0.48295   2.999 0.002708 ** 
-Reward_SideR            -0.59116    0.28509  -2.074 0.038117 *  
-Solution250ppm Caffeine  0.09734    0.27617   0.352 0.724500    
-TSM_Bin120+             -1.01059    0.67530  -1.496 0.134524    
-TSM_Bin30-60            -0.27895    0.70533  -0.395 0.692486    
-TSM_Bin60-90             0.12030    0.79540   0.151 0.879779    
-TSM_Bin90-120           -0.44750    0.68182  -0.656 0.511610    
-Visit3                  -0.33207    0.57710  -0.575 0.565010    
-Visit4                  -1.74288    0.57141  -3.050 0.002287 ** 
-Visit5                  -0.91333    0.56208  -1.625 0.104183    
-TSM_Bin120+:Visit3       1.16474    0.95033   1.226 0.220345    
-TSM_Bin30-60:Visit3      0.03511    0.96322   0.036 0.970920    
-TSM_Bin60-90:Visit3     -0.06355    1.06185  -0.060 0.952273    
-TSM_Bin90-120:Visit3    -0.19882    0.93183  -0.213 0.831043    
-TSM_Bin120+:Visit4       3.78376    1.08966   3.472 0.000516 ***
-TSM_Bin30-60:Visit4      0.34233    0.95969   0.357 0.721312    
-TSM_Bin60-90:Visit4      1.34725    1.05822   1.273 0.202969    
-TSM_Bin90-120:Visit4     2.03279    0.95304   2.133 0.032928 *  
-TSM_Bin120+:Visit5       1.17790    0.91978   1.281 0.200320    
-TSM_Bin30-60:Visit5      0.61637    0.95414   0.646 0.518284    
-TSM_Bin60-90:Visit5      1.41983    1.15966   1.224 0.220822    
-TSM_Bin90-120:Visit5     2.40198    1.08661   2.211 0.027068 *  
+                                  Estimate Std. Error z value Pr(&gt;|z|)   
+(Intercept)                         0.1182     0.3764   0.314  0.75349   
+Reward_SideR                       -0.6595     0.3876  -1.701  0.08889 . 
+Solution0.734mM GABA               -0.3811     0.3921  -0.972  0.33103   
+TSM_Bin30-60                        0.4388     0.2723   1.612  0.10706   
+Visit3                              0.4561     0.3627   1.258  0.20856   
+Visit4                              1.0415     0.3829   2.720  0.00653 **
+Visit5                              1.1248     0.3872   2.905  0.00367 **
+Reward_SideR:Solution0.734mM GABA   0.7317     0.5441   1.345  0.17871   
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Rwr_SR S0.73G TSM_B3 Visit3 Visit4 Visit5
+Reward_SidR -0.530                                          
+S0.734MGABA -0.536  0.537                                   
+TSM_Bn30-60 -0.349 -0.020 -0.013                            
+Visit3      -0.466 -0.018 -0.012  0.019                     
+Visit4      -0.438 -0.037 -0.023  0.039  0.464              
+Visit5      -0.433 -0.039 -0.024  0.041  0.459  0.438       
+R_SR:S0.73G  0.375 -0.713 -0.720  0.015  0.014  0.029  0.030
 optimizer (bobyqa) convergence code: 0 (OK)
 boundary (singular) fit: see ?isSingular
 </pre></div>
@@ -1710,11 +1579,11 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>Reward_Side</th><td> 4.2997812</td><td> 1</td><td>0.03811728</td></tr>
-	<tr><th scope=row>Solution</th><td> 0.1242218</td><td> 1</td><td>0.72449997</td></tr>
-	<tr><th scope=row>TSM_Bin</th><td> 5.5073380</td><td> 4</td><td>0.23908522</td></tr>
-	<tr><th scope=row>Visit</th><td> 3.8821558</td><td> 3</td><td>0.27447357</td></tr>
-	<tr><th scope=row>TSM_Bin:Visit</th><td>22.1074467</td><td>12</td><td>0.03633309</td></tr>
+	<tr><th scope=row>Reward_Side</th><td>1.121216e+00</td><td>1</td><td>0.289656756</td></tr>
+	<tr><th scope=row>Solution</th><td>3.248667e-05</td><td>1</td><td>0.995452316</td></tr>
+	<tr><th scope=row>TSM_Bin</th><td>2.597113e+00</td><td>1</td><td>0.107058586</td></tr>
+	<tr><th scope=row>Visit</th><td>1.145989e+01</td><td>3</td><td>0.009482082</td></tr>
+	<tr><th scope=row>Reward_Side:Solution</th><td>1.808328e+00</td><td>1</td><td>0.178708963</td></tr>
 </tbody>
 </table>
 </div><div class="output text_html"><style>
@@ -1722,14 +1591,114 @@ boundary (singular) fit: see ?isSingular
 .list-inline>li {display: inline-block}
 .list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
 </style>
-<ol class=list-inline><li>'Reward_Side'</li><li>'Solution'</li><li>'TSM_Bin:Visit'</li></ol>
+<ol class=list-inline><li>'TSM_Bin'</li><li>'Visit'</li><li>'Reward_Side:Solution'</li></ol>
 </div></div>
 </div>
-<p>Ants seem to do significantly worse at visit 4 when compared to all others, however significantly better at visit 4 when this occurs between 90-120 and 120+ minutes since visit 1. Other worth to mention results from the model summary include a significant decrease in success rate on the right side of the Y-maze and a slight, yet not significant, improvement of spatial learning under the influence of 250ppm caffeine. Both Experimentor and Collection_Date explain a small amount of variance in the data but not Starvation_Period.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">anova</span><span class="p">(</span><span class="n">mod1</span><span class="p">,</span> <span class="n">mod6</span><span class="p">)</span>
-<span class="n">simres</span> <span class="o">=</span> <span class="nf">simulateResiduals</span><span class="p">(</span><span class="n">mod6</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">mod7</span> <span class="o">=</span> <span class="nf">update</span><span class="p">(</span><span class="n">mod6</span><span class="p">,</span> <span class="n">.</span> <span class="o">~</span> <span class="n">.</span> <span class="o">-</span> <span class="n">Reward_Side</span><span class="o">:</span><span class="n">Solution</span><span class="p">)</span>
+<span class="nf">anova</span><span class="p">(</span><span class="n">mod6</span><span class="p">,</span> <span class="n">mod7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>boundary (singular) fit: see ?isSingular
+</pre></div>
+</div>
+<div class="output text_html"><table class="dataframe">
+<caption>A anova: 2 × 8</caption>
+<thead>
+	<tr><th></th><th scope=col>npar</th><th scope=col>AIC</th><th scope=col>BIC</th><th scope=col>logLik</th><th scope=col>deviance</th><th scope=col>Chisq</th><th scope=col>Df</th><th scope=col>Pr(&gt;Chisq)</th></tr>
+	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>mod7</th><td> 9</td><td>334.6647</td><td>366.5713</td><td>-158.3324</td><td>316.6647</td><td>     NA</td><td>NA</td><td>     NA</td></tr>
+	<tr><th scope=row>mod6</th><td>10</td><td>334.8483</td><td>370.3001</td><td>-157.4242</td><td>314.8483</td><td>1.81642</td><td> 1</td><td>0.17774</td></tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<p>mod6 is not significantly better than mod7 so we will keep mod7</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="n">mod7</span><span class="p">)</span>
+<span class="nf">Anova</span><span class="p">(</span><span class="n">mod7</span><span class="p">)</span>
+<span class="nf">drop.scope</span><span class="p">(</span><span class="n">mod7</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: Final_Decision_Binary ~ Reward_Side + Solution + TSM_Bin + Visit +  
+    (1 | Starvation_Period) + (1 | Collection_Date)
+   Data: ELP_10
+Control: glmerControl(optimizer = &quot;bobyqa&quot;, optCtrl = list(maxfun = 1e+09))
+
+     AIC      BIC   logLik deviance df.resid 
+   334.7    366.6   -158.3    316.7      247 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.1270 -1.0423  0.5670  0.7142  1.2232 
+
+Random effects:
+ Groups            Name        Variance Std.Dev.
+ Collection_Date   (Intercept) 0.008603 0.09275 
+ Starvation_Period (Intercept) 0.000000 0.00000 
+Number of obs: 256, groups:  Collection_Date, 8; Starvation_Period, 2
+
+Fixed effects:
+                      Estimate Std. Error z value Pr(&gt;|z|)   
+(Intercept)          -0.071504   0.345395  -0.207  0.83599   
+Reward_SideR         -0.290528   0.270637  -1.073  0.28305   
+Solution0.734mM GABA -0.002284   0.270988  -0.008  0.99328   
+TSM_Bin30-60          0.436785   0.271490   1.609  0.10765   
+Visit3                0.453082   0.361485   1.253  0.21006   
+Visit4                1.034929   0.381583   2.712  0.00668 **
+Visit5                1.117807   0.385904   2.897  0.00377 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Rwr_SR S0.73G TSM_B3 Visit3 Visit4
+Reward_SidR -0.387                                   
+S0.734MGABA -0.392  0.000                            
+TSM_Bn30-60 -0.386 -0.013 -0.004                     
+Visit3      -0.512 -0.012 -0.002  0.019              
+Visit4      -0.487 -0.024 -0.003  0.039  0.464       
+Visit5      -0.482 -0.025 -0.004  0.041  0.459  0.437
+optimizer (bobyqa) convergence code: 0 (OK)
+boundary (singular) fit: see ?isSingular
+</pre></div>
+</div>
+<div class="output text_html"><table class="dataframe">
+<caption>A anova: 4 × 3</caption>
+<thead>
+	<tr><th></th><th scope=col>Chisq</th><th scope=col>Df</th><th scope=col>Pr(&gt;Chisq)</th></tr>
+	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>Reward_Side</th><td>1.152392e+00</td><td>1</td><td>0.283049064</td></tr>
+	<tr><th scope=row>Solution</th><td>7.104175e-05</td><td>1</td><td>0.993275008</td></tr>
+	<tr><th scope=row>TSM_Bin</th><td>2.588365e+00</td><td>1</td><td>0.107651403</td></tr>
+	<tr><th scope=row>Visit</th><td>1.140048e+01</td><td>3</td><td>0.009746212</td></tr>
+</tbody>
+</table>
+</div><div class="output text_html"><style>
+.list-inline {list-style: none; margin:0; padding: 0}
+.list-inline>li {display: inline-block}
+.list-inline>li:not(:last-child)::after {content: "\00b7"; padding: 0 .5ex}
+</style>
+<ol class=list-inline><li>'Reward_Side'</li><li>'Solution'</li><li>'TSM_Bin'</li><li>'Visit'</li></ol>
+</div></div>
+</div>
+<p>Ants seem to do significantly better at visit 4 and even better at visit 5. Other worth to mention results from the model summary include a slight, yet not significant, decrease in learning success under 0.734mM GABA. Collection_Date explains a small amount of variance in the data but not Starvation_Period.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">anova</span><span class="p">(</span><span class="n">mod1</span><span class="p">,</span> <span class="n">mod7</span><span class="p">)</span>
+<span class="n">simres</span> <span class="o">=</span> <span class="nf">simulateResiduals</span><span class="p">(</span><span class="n">mod7</span><span class="p">)</span>
 <span class="nf">plot</span><span class="p">(</span><span class="n">simres</span><span class="p">,</span> <span class="n">asFactor</span> <span class="o">=</span> <span class="bp">T</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1742,86 +1711,78 @@ boundary (singular) fit: see ?isSingular
 	<tr><th></th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>mod6</th><td>25</td><td>500.4980</td><td>599.5231</td><td>-225.2490</td><td>450.4980</td><td>      NA</td><td>NA</td><td>      NA</td></tr>
-	<tr><th scope=row>mod1</th><td>40</td><td>514.5552</td><td>672.9954</td><td>-217.2776</td><td>434.5552</td><td>15.94282</td><td>15</td><td>0.385862</td></tr>
+	<tr><th scope=row>mod7</th><td> 9</td><td>334.6647</td><td>366.5713</td><td>-158.3324</td><td>316.6647</td><td>      NA</td><td>NA</td><td>       NA</td></tr>
+	<tr><th scope=row>mod1</th><td>21</td><td>351.0427</td><td>425.4914</td><td>-154.5214</td><td>309.0427</td><td>7.622023</td><td>12</td><td>0.8139269</td></tr>
 </tbody>
 </table>
-</div><img alt="_images/ELP_08_analysis_48_1.png" src="_images/ELP_08_analysis_48_1.png" />
+</div><img alt="_images/ELP_10_analysis_51_1.png" src="_images/ELP_10_analysis_51_1.png" />
 </div>
 </div>
-<p>mod1 is not significantly better than mod6 so we will keep mod6 - the diagnostic plots suggest mod6 is still a good fit.</p>
+<p>mod1 is not significantly better than mod7 so we will keep mod7 - the diagnostic plots suggest mod7 is still a good fit.</p>
 </div>
 <div class="section" id="model-interpretation">
 <h4>Model interpretation<a class="headerlink" href="#model-interpretation" title="Permalink to this headline">¶</a></h4>
-<p>There is an effect of reward side:</p>
+<p>There is an effect of visit:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod6</span><span class="p">,</span> <span class="o">~</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod7</span><span class="p">,</span> <span class="o">~</span><span class="n">Visit</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
 <span class="nf">pairs</span><span class="p">(</span><span class="n">meanobj</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="s">&quot;bonferroni&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> contrast odds.ratio    SE  df null z.ratio p.value
- L / R          1.81 0.515 Inf    1   2.074  0.0381
+ 2 / 3         0.636 0.230 Inf    1  -1.253  1.0000
+ 2 / 4         0.355 0.136 Inf    1  -2.712  0.0401
+ 2 / 5         0.327 0.126 Inf    1  -2.897  0.0226
+ 3 / 4         0.559 0.215 Inf    1  -1.511  0.7850
+ 3 / 5         0.514 0.200 Inf    1  -1.707  0.5266
+ 4 / 5         0.920 0.375 Inf    1  -0.204  1.0000
 
-Results are averaged over the levels of: Solution, TSM_Bin, Visit 
+Results are averaged over the levels of: Reward_Side, Solution, TSM_Bin 
+P value adjustment: bonferroni method for 6 tests 
 Tests are performed on the log odds ratio scale 
 </pre></div>
 </div>
 </div>
 </div>
-<p>Ants tend to chose the left side of the Y-maze more often than the right side. This is particularly interesting as each experimentor had a differently orientated Y-maze setup, meaning that for one Left was towards the wall and to the other it was away from the wall. This would suggest an internal innate preference to turn left over a preference towards one side of the experimental room.</p>
+<p>Ants are significantly more successful at learning at visit 4 and 5 when compared to visit 2 but not visit 3.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod6</span><span class="p">,</span> <span class="o">~</span><span class="n">TSM_Bin</span> <span class="o">*</span> <span class="n">Visit</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod7</span><span class="p">,</span> <span class="o">~</span><span class="n">TSM_Bin</span> <span class="o">*</span> <span class="n">Visit</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
 <span class="nf">test</span><span class="p">(</span><span class="n">meanobj</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html"><table class="dataframe">
-<caption>A summary_emm: 20 × 8</caption>
+<caption>A summary_emm: 8 × 8</caption>
 <thead>
 	<tr><th></th><th scope=col>TSM_Bin</th><th scope=col>Visit</th><th scope=col>prob</th><th scope=col>SE</th><th scope=col>df</th><th scope=col>null</th><th scope=col>z.ratio</th><th scope=col>p.value</th></tr>
 	<tr><th></th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>1</th><td>0-30  </td><td>2</td><td>0.7687932</td><td>0.07832191</td><td>Inf</td><td>0.5</td><td> 2.7268049</td><td>0.006395083</td></tr>
-	<tr><th scope=row>2</th><td>120+  </td><td>2</td><td>0.5475854</td><td>0.13307548</td><td>Inf</td><td>0.5</td><td> 0.3554192</td><td>0.722275573</td></tr>
-	<tr><th scope=row>3</th><td>30-60 </td><td>2</td><td>0.7155639</td><td>0.11821202</td><td>Inf</td><td>0.5</td><td> 1.5884267</td><td>0.112189890</td></tr>
-	<tr><th scope=row>4</th><td>60-90 </td><td>2</td><td>0.7894833</td><td>0.11272703</td><td>Inf</td><td>0.5</td><td> 1.9488197</td><td>0.051316957</td></tr>
-	<tr><th scope=row>5</th><td>90-120</td><td>2</td><td>0.6800513</td><td>0.11975159</td><td>Inf</td><td>0.5</td><td> 1.3699871</td><td>0.170690934</td></tr>
-	<tr><th scope=row>6</th><td>0-30  </td><td>3</td><td>0.7046280</td><td>0.08637247</td><td>Inf</td><td>0.5</td><td> 2.0950324</td><td>0.036168112</td></tr>
-	<tr><th scope=row>7</th><td>120+  </td><td>3</td><td>0.7356704</td><td>0.11293775</td><td>Inf</td><td>0.5</td><td> 1.7624387</td><td>0.077995210</td></tr>
-	<tr><th scope=row>8</th><td>30-60 </td><td>3</td><td>0.6514912</td><td>0.12693413</td><td>Inf</td><td>0.5</td><td> 1.1190282</td><td>0.263128123</td></tr>
-	<tr><th scope=row>9</th><td>60-90 </td><td>3</td><td>0.7163005</td><td>0.12625471</td><td>Inf</td><td>0.5</td><td> 1.4907456</td><td>0.136028286</td></tr>
-	<tr><th scope=row>10</th><td>90-120</td><td>3</td><td>0.5555483</td><td>0.13072025</td><td>Inf</td><td>0.5</td><td> 0.4214348</td><td>0.673437628</td></tr>
-	<tr><th scope=row>11</th><td>0-30  </td><td>4</td><td>0.3678681</td><td>0.09308560</td><td>Inf</td><td>0.5</td><td>-1.3524286</td><td>0.176238261</td></tr>
-	<tr><th scope=row>12</th><td>120+  </td><td>4</td><td>0.9030688</td><td>0.06911568</td><td>Inf</td><td>0.5</td><td> 2.8265885</td><td>0.004704674</td></tr>
-	<tr><th scope=row>13</th><td>30-60 </td><td>4</td><td>0.3827261</td><td>0.13191746</td><td>Inf</td><td>0.5</td><td>-0.8560230</td><td>0.391985073</td></tr>
-	<tr><th scope=row>14</th><td>60-90 </td><td>4</td><td>0.7163005</td><td>0.12625483</td><td>Inf</td><td>0.5</td><td> 1.4907445</td><td>0.136028579</td></tr>
-	<tr><th scope=row>15</th><td>90-120</td><td>4</td><td>0.7396047</td><td>0.11054845</td><td>Inf</td><td>0.5</td><td> 1.8186339</td><td>0.068967303</td></tr>
-	<tr><th scope=row>16</th><td>0-30  </td><td>5</td><td>0.5715498</td><td>0.09578256</td><td>Inf</td><td>0.5</td><td> 0.7367625</td><td>0.461266769</td></tr>
-	<tr><th scope=row>17</th><td>120+  </td><td>5</td><td>0.6119441</td><td>0.12909218</td><td>Inf</td><td>0.5</td><td> 0.8378890</td><td>0.402093027</td></tr>
-	<tr><th scope=row>18</th><td>30-60 </td><td>5</td><td>0.6514910</td><td>0.12693493</td><td>Inf</td><td>0.5</td><td> 1.1190194</td><td>0.263131866</td></tr>
-	<tr><th scope=row>19</th><td>60-90 </td><td>5</td><td>0.8615603</td><td>0.09377157</td><td>Inf</td><td>0.5</td><td> 2.3255466</td><td>0.020042752</td></tr>
-	<tr><th scope=row>20</th><td>90-120</td><td>5</td><td>0.9040155</td><td>0.06805667</td><td>Inf</td><td>0.5</td><td> 2.8593659</td><td>0.004244889</td></tr>
+	<tr><th scope=row>1</th><td>0-30 </td><td>2</td><td>0.4457372</td><td>0.07124338</td><td>Inf</td><td>0.5</td><td>-0.7556594</td><td>4.498534e-01</td></tr>
+	<tr><th scope=row>2</th><td>30-60</td><td>2</td><td>0.5545014</td><td>0.07129924</td><td>Inf</td><td>0.5</td><td> 0.7583338</td><td>4.482512e-01</td></tr>
+	<tr><th scope=row>3</th><td>0-30 </td><td>3</td><td>0.5585238</td><td>0.07172530</td><td>Inf</td><td>0.5</td><td> 0.8084703</td><td>4.188199e-01</td></tr>
+	<tr><th scope=row>4</th><td>30-60</td><td>3</td><td>0.6619413</td><td>0.06658272</td><td>Inf</td><td>0.5</td><td> 2.2583532</td><td>2.392365e-02</td></tr>
+	<tr><th scope=row>5</th><td>0-30 </td><td>4</td><td>0.6936033</td><td>0.06635209</td><td>Inf</td><td>0.5</td><td> 2.6168150</td><td>8.875444e-03</td></tr>
+	<tr><th scope=row>6</th><td>30-60</td><td>4</td><td>0.7779577</td><td>0.05615913</td><td>Inf</td><td>0.5</td><td> 3.8565681</td><td>1.149901e-04</td></tr>
+	<tr><th scope=row>7</th><td>0-30 </td><td>5</td><td>0.7109284</td><td>0.06516294</td><td>Inf</td><td>0.5</td><td> 2.8380730</td><td>4.538680e-03</td></tr>
+	<tr><th scope=row>8</th><td>30-60</td><td>5</td><td>0.7919437</td><td>0.05447121</td><td>Inf</td><td>0.5</td><td> 4.0433014</td><td>5.270381e-05</td></tr>
 </tbody>
 </table>
 </div></div>
 </div>
-<p>There is a <strong>strong interaction effect of Time Since Marking and Visit</strong>. Interestingly most combinations of the two appear to steer the ants into random choice. The exceptions to this are:</p>
+<p>All visits/time since marking combinations are significantly different than chance (50%) except for:</p>
 <ul class="simple">
-<li><p><strong>Visit 2:</strong> 0-30 &amp; 60-90</p></li>
-<li><p><strong>Visit 3:</strong> 0-30</p></li>
-<li><p><strong>Visit 4:</strong> 120+</p></li>
-<li><p><strong>Visit 5:</strong> 60-90 &amp; 90-120</p></li>
+<li><p>Visit 2: 0-30 &amp; 30-60</p></li>
+<li><p>Visit 3: 0-30</p></li>
 </ul>
-<p>This vaguely suggests that <strong>ants tested soon after training learn better at earlier visits</strong> but not latter ones. This could be due to a loss of interest and exploration once they are sure of the food’s location. Additionally, <strong>ants tested long after training appear to have higher success rates at later visits. Curiously, this seems to lead to much higher success rates.</strong></p>
+<p>It is interesting to note that all probabilities associated with visits at 30-60 minutes after marking are higher than their 0-30 counterparts - though this is likely not significant.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod6</span><span class="p">,</span> <span class="o">~</span><span class="n">Solution</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod7</span><span class="p">,</span> <span class="o">~</span><span class="n">Solution</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
 <span class="nf">test</span><span class="p">(</span><span class="n">meanobj</span><span class="p">)</span>
 <span class="nf">pairs</span><span class="p">(</span><span class="n">meanobj</span><span class="p">,</span> <span class="n">adjust</span> <span class="o">=</span> <span class="s">&quot;bonferroni&quot;</span><span class="p">)</span>
 </pre></div>
@@ -1835,12 +1796,12 @@ Tests are performed on the log odds ratio scale
 	<tr><th></th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>1</th><td>Control        </td><td>0.6868443</td><td>0.0486294</td><td>Inf</td><td>0.5</td><td>3.473877</td><td>5.129964e-04</td></tr>
-	<tr><th scope=row>2</th><td>250ppm Caffeine</td><td>0.7073903</td><td>0.0467346</td><td>Inf</td><td>0.5</td><td>3.909701</td><td>9.241031e-05</td></tr>
+	<tr><th scope=row>1</th><td>Control     </td><td>0.6577041</td><td>0.04425346</td><td>Inf</td><td>0.5</td><td>3.322393</td><td>0.0008924898</td></tr>
+	<tr><th scope=row>2</th><td>0.734mM GABA</td><td>0.6571897</td><td>0.04392449</td><td>Inf</td><td>0.5</td><td>3.337969</td><td>0.0008439313</td></tr>
 </tbody>
 </table>
-</div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> contrast                  odds.ratio    SE  df null z.ratio p.value
- Control / 250ppm Caffeine      0.907 0.251 Inf    1  -0.352  0.7245
+</div><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> contrast               odds.ratio    SE  df null z.ratio p.value
+ Control / 0.734mM GABA          1 0.272 Inf    1   0.008  0.9933
 
 Results are averaged over the levels of: Reward_Side, TSM_Bin, Visit 
 Tests are performed on the log odds ratio scale 
@@ -1848,10 +1809,10 @@ Tests are performed on the log odds ratio scale
 </div>
 </div>
 </div>
-<p>There was <strong>no significant difference between control and 250ppm caffeine</strong> solutions suggesting caffeine has little to no effect on the ants ability to associate a reward with a side of the Y-maze.</p>
+<p>There was <strong>no significant difference between control and 0.734mM GABA</strong> solutions suggesting GABA has little to no effect on the ants ability to associate a reward with a side of the Y-maze.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod6</span><span class="p">,</span> <span class="o">~</span><span class="m">1</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">meanobj</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">mod7</span><span class="p">,</span> <span class="o">~</span><span class="m">1</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
 <span class="nf">test</span><span class="p">(</span><span class="n">meanobj</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1864,12 +1825,12 @@ Tests are performed on the log odds ratio scale
 	<tr><th></th><th scope=col>&lt;fct&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
 </thead>
 <tbody>
-	<tr><th scope=row>1</th><td>overall</td><td>0.6972159</td><td>0.03775186</td><td>Inf</td><td>0.5</td><td>4.664091</td><td>3.099837e-06</td></tr>
+	<tr><th scope=row>1</th><td>overall</td><td>0.6574469</td><td>0.0318234</td><td>Inf</td><td>0.5</td><td>4.613684</td><td>3.955943e-06</td></tr>
 </tbody>
 </table>
 </div></div>
 </div>
-<p>Overall, the ants successfully associated the presence of a reward with a side of the Y-maze with a <strong>70%</strong> success rate, a percentage significantly different from chance level (50%).</p>
+<p>Overall, the ants successfully associated the presence of a reward with a side of the Y-maze with a <strong>66%</strong> success rate, a percentage significantly different from chance level (50%).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">sessionInfo</span><span class="p">()</span>
@@ -1944,17 +1905,17 @@ loaded via a namespace (and not attached):
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="ELP_09_analysis.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Welcome to The Animal Comparative Economics Book!</p>
+            <p class="prev-next-title">ELP.09 - Octopamine Side Learning Y-Maze</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="ELP_09_analysis.html" title="next page">
+    <a class='right-next' id="next-link" href="3d_parts.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ELP.09 - Octopamine Side Learning Y-Maze</p>
+        <p class="prev-next-title">3D Printing</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
