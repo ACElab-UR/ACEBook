@@ -142,6 +142,18 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  ELP - Y-maze Odour Learning
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Caffeine_Odour_MK01.html">
+   Caffeine Odour Learning Y-maze
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   3D Parts
  </span>
 </p>
@@ -362,6 +374,11 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data">
+   Check if the most complex model (max_mod) is a good fit to the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#model-selection">
    Model Selection
   </a>
@@ -482,6 +499,11 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data">
+   Check if the most complex model (max_mod) is a good fit to the data
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#model-selection">
@@ -862,6 +884,21 @@ Tests are performed on the log odds ratio scale
 </div>
 </div>
 </div>
+<div class="section" id="check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data">
+<h2>Check if the most complex model (max_mod) is a good fit to the data<a class="headerlink" href="#check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">simres</span> <span class="o">=</span> <span class="nf">simulateResiduals</span><span class="p">(</span><span class="n">max_mod</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">simres</span><span class="p">,</span> <span class="n">asFactor</span> <span class="o">=</span> <span class="bp">T</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Nicotine_MK01_29_0.png" src="_images/Nicotine_MK01_29_0.png" />
+</div>
+</div>
+<p>The maximum model seems to hold all assumptions and be a god fit to the data. Therefore, all simpler models should be equally good.</p>
+</div>
 <div class="section" id="model-selection">
 <h2>Model Selection<a class="headerlink" href="#model-selection" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
@@ -947,7 +984,7 @@ Tests are performed on the log odds ratio scale
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Nicotine_MK01_33_0.png" src="_images/Nicotine_MK01_33_0.png" />
+<img alt="_images/Nicotine_MK01_35_0.png" src="_images/Nicotine_MK01_35_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -957,7 +994,7 @@ Tests are performed on the log odds ratio scale
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/Nicotine_MK01_34_0.png" src="_images/Nicotine_MK01_34_0.png" />
+<img alt="_images/Nicotine_MK01_36_0.png" src="_images/Nicotine_MK01_36_0.png" />
 </div>
 </div>
 </div>

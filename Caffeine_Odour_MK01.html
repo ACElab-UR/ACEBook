@@ -1,0 +1,1217 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caffeine Odour Learning Y-maze &#8212; Cognitive Control</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="3D Printing" href="3d_parts.html" />
+    <link rel="prev" title="Dopamine Side Learning Y-maze" href="Dopamine_MK01.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Cognitive Control</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to The Animal Comparative Economics Book!
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ELP - Y-maze Side Learning
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Caffeine_MK01.html">
+   Caffeine Side Learning Y-maze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Octopamine_MK01.html">
+   Octopamine Side Learning Y-maze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GABA_MK01.html">
+   GABA Side Learning Y-maze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="BAlanine_MK01.html">
+   B-alanine Side Learning Y-maze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Taurine_MK01.html">
+   Taurine Side Learning Y-maze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Nicotine_MK01.html">
+   Nicotine Side Learning Y-maze
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Dopamine_MK01.html">
+   Dopamine Side Learning Y-maze
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ELP - Y-maze Odour Learning
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Caffeine Odour Learning Y-maze
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  3D Parts
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="3d_parts.html">
+   3D Printing
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How To
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="how_to_git.html">
+   Git and GitHub Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="how_to_3D_print.html">
+   3D Printing Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="how_to_laser_cut.html">
+   Laser Cutting Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="how_to_R.html">
+   R Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="how_to_Python.html">
+   Python Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="how_to_use_COLAB.html">
+   GoogleColab Guidelines
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Caffeine_Odour_MK01.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ACElab-UR/ACEBook"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ACElab-UR/ACEBook/main?urlpath=tree/docs/Caffeine_Odour_MK01.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-packages">
+   Load packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clean-up">
+   Clean-up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-data">
+   Load data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#get-a-binary-right-wrong-of-initial-and-final-decision-and-check-how-many-ants-switched-between-their-initial-and-final-decision">
+   Get a binary right/wrong of initial and final decision and check how many ants switched between their initial and final decision
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unblind-solutions">
+   Unblind solutions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sample-size">
+   Sample size
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ensure-relevant-variables-are-factors">
+   Ensure relevant variables are factors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#do-initial-and-final-choices-significantly-differ">
+   Do initial and final choices significantly differ?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#define-models">
+   Define models
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#null-model">
+     1. Null model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solution-model">
+     2. Solution model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#side-model">
+     3. Side model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#odour-model">
+     4. Odour model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximal-model">
+     5. Maximal model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data">
+   Check if the most complex model (max_mod) is a good fit to the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-selection">
+   Model Selection
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initial-conclusions">
+   Initial Conclusions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brain-lateralisation-vs-visual-cues">
+   Brain lateralisation VS Visual Cues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-averaging">
+   Model averaging
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#odds">
+   Odds
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Caffeine Odour Learning Y-maze</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-packages">
+   Load packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#clean-up">
+   Clean-up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-data">
+   Load data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#get-a-binary-right-wrong-of-initial-and-final-decision-and-check-how-many-ants-switched-between-their-initial-and-final-decision">
+   Get a binary right/wrong of initial and final decision and check how many ants switched between their initial and final decision
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#unblind-solutions">
+   Unblind solutions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sample-size">
+   Sample size
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ensure-relevant-variables-are-factors">
+   Ensure relevant variables are factors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#do-initial-and-final-choices-significantly-differ">
+   Do initial and final choices significantly differ?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#define-models">
+   Define models
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#null-model">
+     1. Null model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solution-model">
+     2. Solution model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#side-model">
+     3. Side model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#odour-model">
+     4. Odour model
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#maximal-model">
+     5. Maximal model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data">
+   Check if the most complex model (max_mod) is a good fit to the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-selection">
+   Model Selection
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initial-conclusions">
+   Initial Conclusions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#brain-lateralisation-vs-visual-cues">
+   Brain lateralisation VS Visual Cues
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-averaging">
+   Model averaging
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#odds">
+   Odds
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusions">
+   Conclusions
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="caffeine-odour-learning-y-maze">
+<h1>Caffeine Odour Learning Y-maze<a class="headerlink" href="#caffeine-odour-learning-y-maze" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="load-packages">
+<h2>Load packages<a class="headerlink" href="#load-packages" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">require</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span> <span class="c1"># For data handling</span>
+<span class="nf">require</span><span class="p">(</span><span class="n">lme4</span><span class="p">)</span> <span class="c1"># Linear mixed-effects models</span>
+<span class="nf">require</span><span class="p">(</span><span class="n">emmeans</span><span class="p">)</span> <span class="c1"># Post-hoc analysis on the model</span>
+<span class="nf">require</span><span class="p">(</span><span class="n">DHARMa</span><span class="p">)</span> <span class="c1"># Evaluate model fit</span>
+<span class="nf">require</span><span class="p">(</span><span class="n">AICcmodavg</span><span class="p">)</span> <span class="c1"># For model selection and averaging</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: reshape2
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: lme4
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: Matrix
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: emmeans
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: DHARMa
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>This is DHARMa 0.4.5. For overview type &#39;?DHARMa&#39;. For recent changes, type news(package = &#39;DHARMa&#39;)
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Loading required package: AICcmodavg
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Attaching package: ‘AICcmodavg’
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The following object is masked from ‘package:lme4’:
+
+    checkConv
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="clean-up">
+<h2>Clean-up<a class="headerlink" href="#clean-up" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">rm</span><span class="p">(</span><span class="n">list</span> <span class="o">=</span> <span class="nf">ls</span><span class="p">())</span> <span class="c1"># Remove variables/objects</span>
+<span class="nf">graphics.off</span><span class="p">()</span> <span class="c1"># Close any open graphics</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="load-data">
+<h2>Load data<a class="headerlink" href="#load-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP</span> <span class="o">=</span> <span class="nf">read.csv2</span><span class="p">(</span><span class="s">&quot;./Data/ELP_14_Caffeine_odour_learning_Y_maze.csv&quot;</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">ELP</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span> <span class="c1"># Check it was loaded correctly</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table class="dataframe">
+<caption>A data.frame: 1 × 18</caption>
+<thead>
+	<tr><th></th><th scope=col>Collection_Date</th><th scope=col>Time_Collection</th><th scope=col>Experimentor</th><th scope=col>Temperature</th><th scope=col>Colony_Origin</th><th scope=col>Starvation_Period</th><th scope=col>Donor_Colony</th><th scope=col>Recipient_Colony</th><th scope=col>Ant_ID</th><th scope=col>Solution</th><th scope=col>Reward_Odour</th><th scope=col>Reward_Side</th><th scope=col>Initial_Decision</th><th scope=col>Final_Decision</th><th scope=col>Number_Relocations</th><th scope=col>Nest_Duration</th><th scope=col>Trophallaxis</th><th scope=col>Full</th></tr>
+	<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;int&gt;</th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;chr&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>1</th><td>17.08.22</td><td>14:20</td><td>Alexandra Koch</td><td>25.4</td><td>21st April - Spain</td><td>4-days</td><td>9</td><td>11</td><td>1</td><td>R</td><td>Strawberry</td><td>R</td><td>R</td><td>R</td><td>0</td><td>986</td><td>NA</td><td>No</td></tr>
+</tbody>
+</table>
+</div></div>
+</div>
+</div>
+<div class="section" id="get-a-binary-right-wrong-of-initial-and-final-decision-and-check-how-many-ants-switched-between-their-initial-and-final-decision">
+<h2>Get a binary right/wrong of initial and final decision and check how many ants switched between their initial and final decision<a class="headerlink" href="#get-a-binary-right-wrong-of-initial-and-final-decision-and-check-how-many-ants-switched-between-their-initial-and-final-decision" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP</span><span class="o">$</span><span class="n">Initial_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Initial_Decision</span> <span class="o">==</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Final_Decision</span> <span class="o">==</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">0</span><span class="p">)</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Switched_Binary</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Initial_Binary</span> <span class="o">==</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="unblind-solutions">
+<h2>Unblind solutions<a class="headerlink" href="#unblind-solutions" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">ifelse</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span> <span class="o">==</span> <span class="s">&quot;W&quot;</span><span class="p">,</span> <span class="s">&quot;Caffeine&quot;</span><span class="p">,</span> <span class="s">&quot;Control&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="sample-size">
+<h2>Sample size<a class="headerlink" href="#sample-size" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">table</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Odour</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>, ,  = Caffeine
+
+            
+              L  R
+  Apple      12 12
+  Strawberry 12 12
+
+, ,  = Control
+
+            
+              L  R
+  Apple      12 12
+  Strawberry 12 12
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ensure-relevant-variables-are-factors">
+<h2>Ensure relevant variables are factors<a class="headerlink" href="#ensure-relevant-variables-are-factors" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP</span><span class="o">$</span><span class="n">Collection_Date</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Collection_Date</span><span class="p">)</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Colony_ID</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Donor_Colony</span><span class="p">,</span> <span class="s">&quot;_&quot;</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Recipient_Colony</span><span class="p">))</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Ant_ID</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Ant_ID</span><span class="p">)</span>
+
+<span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span><span class="p">)</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span> <span class="o">=</span> <span class="nf">relevel</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="s">&quot;Control&quot;</span><span class="p">)</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Odour</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Odour</span><span class="p">)</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Side</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">)</span>
+
+<span class="n">ELP</span><span class="o">$</span><span class="n">Initial_Binary</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Initial_Binary</span><span class="p">)</span>
+<span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="do-initial-and-final-choices-significantly-differ">
+<h2>Do initial and final choices significantly differ?<a class="headerlink" href="#do-initial-and-final-choices-significantly-differ" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">ELP_choice_diff</span> <span class="o">=</span> <span class="nf">melt</span><span class="p">(</span><span class="n">ELP</span><span class="p">,</span> <span class="n">measure.vars</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Initial_Binary&quot;</span><span class="p">,</span> <span class="s">&quot;Final_Binary&quot;</span><span class="p">))</span>
+<span class="n">ELP_choice_diff</span><span class="o">$</span><span class="n">variable</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_choice_diff</span><span class="o">$</span><span class="n">variable</span><span class="p">)</span>
+<span class="n">ELP_choice_diff</span><span class="o">$</span><span class="n">value</span> <span class="o">=</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP_choice_diff</span><span class="o">$</span><span class="n">value</span><span class="p">)</span>
+
+<span class="n">ELP_choice_diff_mod</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">value</span> <span class="o">~</span> <span class="n">variable</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Colony_ID</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Ant_ID</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ELP_choice_diff</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="nf">emmeans</span><span class="p">(</span><span class="n">ELP_choice_diff_mod</span><span class="p">,</span> <span class="o">~</span><span class="n">variable</span><span class="p">,</span> <span class="n">type</span> <span class="o">=</span> <span class="s">&quot;response&quot;</span><span class="p">)</span>
+<span class="nf">pairs</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>boundary (singular) fit: see help(&#39;isSingular&#39;)
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> contrast                      odds.ratio    SE  df null z.ratio p.value
+ Initial_Binary / Final_Binary      0.239 0.124 Inf    1  -2.753  0.0059
+
+Tests are performed on the log odds ratio scale 
+</pre></div>
+</div>
+</div>
+</div>
+<p>p-value &lt; 0.05 therefore there is a significant difference between initial and final decisions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Initial_Binary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Caffeine_Odour_MK01_18_0.png" src="_images/Caffeine_Odour_MK01_18_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Caffeine_Odour_MK01_19_0.png" src="_images/Caffeine_Odour_MK01_19_0.png" />
+</div>
+</div>
+<p><strong>There is around a 20% difference between the number of ants that choose the reward side as their initial and final choice. Since the number of ants that choose the reward side is 20% higher in final decision this suggests that ants are correcting their choice during the visit before they reach the solution. Therefore we use final choice as we are interested in their memory and if they switch it implies they know that they were going on the unrewarded side.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="nf">as.factor</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Switched_Binary</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Caffeine_Odour_MK01_21_0.png" src="_images/Caffeine_Odour_MK01_21_0.png" />
+</div>
+</div>
+<p><strong>There seems to be no difference between the number of ants that switch between initial and final choice between treatments.</strong></p>
+</div>
+<div class="section" id="define-models">
+<h2>Define models<a class="headerlink" href="#define-models" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="null-model">
+<h3>1. Null model<a class="headerlink" href="#null-model" title="Permalink to this headline">¶</a></h3>
+<p><strong>Biological hypothesis:</strong> Ants randomly choose a Y-maze arm.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">null_mod</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">Final_Binary</span> <span class="o">~</span> <span class="m">1</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Colony_ID</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Ant_ID</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ELP</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="s">&quot;binomial&quot;</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>boundary (singular) fit: see help(&#39;isSingular&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="solution-model">
+<h3>2. Solution model<a class="headerlink" href="#solution-model" title="Permalink to this headline">¶</a></h3>
+<p><strong>Biological hypothesis:</strong> The presence of a psychoactive chemical in the reward alters the ants ability to choose a Y-maze arm.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">solution_mod</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">Final_Binary</span> <span class="o">~</span> <span class="n">Solution</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Colony_ID</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Ant_ID</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ELP</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="s">&quot;binomial&quot;</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>boundary (singular) fit: see help(&#39;isSingular&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="side-model">
+<h3>3. Side model<a class="headerlink" href="#side-model" title="Permalink to this headline">¶</a></h3>
+<p><strong>Biological hypothesis:</strong> Ants have an intrinsic predisposition towards turning left or right. This is associated with brain lateralisation which has been shown in multiple organisms.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">side_mod</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">Final_Binary</span> <span class="o">~</span> <span class="n">Reward_Side</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Colony_ID</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Ant_ID</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ELP</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="s">&quot;binomial&quot;</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>boundary (singular) fit: see help(&#39;isSingular&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="odour-model">
+<h3>4. Odour model<a class="headerlink" href="#odour-model" title="Permalink to this headline">¶</a></h3>
+<p><strong>Biological hypothesis:</strong> Ants have an innate preference towards an odour.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">odour_mod</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">Final_Binary</span> <span class="o">~</span> <span class="n">Reward_Odour</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Colony_ID</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Ant_ID</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ELP</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="s">&quot;binomial&quot;</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>boundary (singular) fit: see help(&#39;isSingular&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="maximal-model">
+<h3>5. Maximal model<a class="headerlink" href="#maximal-model" title="Permalink to this headline">¶</a></h3>
+<p><strong>Biological hypothesis:</strong> All of the available variables contribute towards ant learning.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">max_mod</span> <span class="o">=</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">Final_Binary</span> <span class="o">~</span> <span class="n">Solution</span> <span class="o">+</span> <span class="n">Reward_Side</span> <span class="o">+</span> <span class="n">Reward_Odour</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Collection_Date</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Colony_ID</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">Ant_ID</span><span class="p">),</span> <span class="n">data</span> <span class="o">=</span> <span class="n">ELP</span><span class="p">,</span> <span class="n">family</span> <span class="o">=</span> <span class="s">&quot;binomial&quot;</span><span class="p">,</span> <span class="nf">glmerControl</span><span class="p">(</span><span class="n">optimizer</span> <span class="o">=</span> <span class="s">&quot;bobyqa&quot;</span><span class="p">,</span> <span class="n">optCtrl</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">maxfun</span> <span class="o">=</span> <span class="m">1000000000</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>boundary (singular) fit: see help(&#39;isSingular&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data">
+<h2>Check if the most complex model (max_mod) is a good fit to the data<a class="headerlink" href="#check-if-the-most-complex-model-max-mod-is-a-good-fit-to-the-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">simres</span> <span class="o">=</span> <span class="nf">simulateResiduals</span><span class="p">(</span><span class="n">max_mod</span><span class="p">)</span>
+<span class="nf">plot</span><span class="p">(</span><span class="n">simres</span><span class="p">,</span> <span class="n">asFactor</span> <span class="o">=</span> <span class="bp">T</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Caffeine_Odour_MK01_34_0.png" src="_images/Caffeine_Odour_MK01_34_0.png" />
+</div>
+</div>
+<p>The maximum model seems to hold all assumptions and be a god fit to the data. Therefore, all simpler models should be equally good.</p>
+</div>
+<div class="section" id="model-selection">
+<h2>Model Selection<a class="headerlink" href="#model-selection" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">cand_models</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="s">&quot;null_mod&quot;</span> <span class="o">=</span> <span class="n">null_mod</span><span class="p">,</span> 
+                   <span class="s">&quot;solution_mod&quot;</span> <span class="o">=</span> <span class="n">solution_mod</span><span class="p">,</span>
+                   <span class="s">&quot;side_mod&quot;</span> <span class="o">=</span> <span class="n">side_mod</span><span class="p">,</span>
+                   <span class="s">&quot;odour_mod&quot;</span> <span class="o">=</span> <span class="n">odour_mod</span><span class="p">,</span>
+                   <span class="s">&quot;max_mod&quot;</span> <span class="o">=</span> <span class="n">max_mod</span><span class="p">)</span>
+
+<span class="nf">aictab</span><span class="p">(</span><span class="n">cand_models</span><span class="p">)</span>
+<span class="nf">confset</span><span class="p">(</span><span class="n">cand.set</span> <span class="o">=</span> <span class="n">cand_models</span><span class="p">)</span> <span class="c1"># Remove models that explain the last 0.05 Cum.Wt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><table class="dataframe">
+<caption>A aictab: 5 × 8</caption>
+<thead>
+	<tr><th></th><th scope=col>Modnames</th><th scope=col>K</th><th scope=col>AICc</th><th scope=col>Delta_AICc</th><th scope=col>ModelLik</th><th scope=col>AICcWt</th><th scope=col>LL</th><th scope=col>Cum.Wt</th></tr>
+	<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>1</th><td>null_mod    </td><td>4</td><td>109.1643</td><td>0.000000</td><td>1.00000000</td><td>0.46255159</td><td>-50.36239</td><td>0.4625516</td></tr>
+	<tr><th scope=row>2</th><td>solution_mod</td><td>5</td><td>110.8627</td><td>1.698326</td><td>0.42777283</td><td>0.19786700</td><td>-50.09800</td><td>0.6604186</td></tr>
+	<tr><th scope=row>4</th><td>odour_mod   </td><td>5</td><td>111.2853</td><td>2.120914</td><td>0.34629758</td><td>0.16018050</td><td>-50.30930</td><td>0.8205991</td></tr>
+	<tr><th scope=row>3</th><td>side_mod    </td><td>5</td><td>111.3165</td><td>2.152136</td><td>0.34093349</td><td>0.15769933</td><td>-50.32491</td><td>0.9782984</td></tr>
+	<tr><th scope=row>5</th><td>max_mod     </td><td>7</td><td>115.2831</td><td>6.118746</td><td>0.04691711</td><td>0.02170158</td><td>-50.00518</td><td>1.0000000</td></tr>
+</tbody>
+</table>
+</div><div class="output text_html"><dl>
+	<dt>$method</dt>
+		<dd>'raw'</dd>
+	<dt>$level</dt>
+		<dd>0.95</dd>
+	<dt>$table</dt>
+		<dd><table class="dataframe">
+<caption>A aictab: 4 × 8</caption>
+<thead>
+	<tr><th></th><th scope=col>Modnames</th><th scope=col>K</th><th scope=col>AICc</th><th scope=col>Delta_AICc</th><th scope=col>ModelLik</th><th scope=col>AICcWt</th><th scope=col>LL</th><th scope=col>Cum.Wt</th></tr>
+	<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>1</th><td>null_mod    </td><td>4</td><td>109.1643</td><td>0.000000</td><td>1.0000000</td><td>0.4625516</td><td>-50.36239</td><td>0.4625516</td></tr>
+	<tr><th scope=row>2</th><td>solution_mod</td><td>5</td><td>110.8627</td><td>1.698326</td><td>0.4277728</td><td>0.1978670</td><td>-50.09800</td><td>0.6604186</td></tr>
+	<tr><th scope=row>4</th><td>odour_mod   </td><td>5</td><td>111.2853</td><td>2.120914</td><td>0.3462976</td><td>0.1601805</td><td>-50.30930</td><td>0.8205991</td></tr>
+	<tr><th scope=row>3</th><td>side_mod    </td><td>5</td><td>111.3165</td><td>2.152136</td><td>0.3409335</td><td>0.1576993</td><td>-50.32491</td><td>0.9782984</td></tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</div></div>
+</div>
+<p><strong>The null_mod explains 46% of the total variance explained by all of the models tested.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">evidence</span><span class="p">(</span><span class="n">aic.table</span> <span class="o">=</span> <span class="nf">aictab</span><span class="p">(</span><span class="n">cand_models</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><dl>
+	<dt>$Model.high</dt>
+		<dd>'null_mod'</dd>
+	<dt>$Model.low</dt>
+		<dd>'solution_mod'</dd>
+	<dt>$Ev.ratio</dt>
+		<dd>2.33768938914218</dd>
+</dl>
+</div></div>
+</div>
+<p>The null model is 2 times more parsimonious than the next “best” model (solution_mod).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Solution</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Caffeine_Odour_MK01_40_0.png" src="_images/Caffeine_Odour_MK01_40_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Side</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Caffeine_Odour_MK01_41_0.png" src="_images/Caffeine_Odour_MK01_41_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">plot</span><span class="p">(</span><span class="n">ELP</span><span class="o">$</span><span class="n">Reward_Odour</span><span class="p">,</span> <span class="n">ELP</span><span class="o">$</span><span class="n">Final_Binary</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Caffeine_Odour_MK01_42_0.png" src="_images/Caffeine_Odour_MK01_42_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="initial-conclusions">
+<h2>Initial Conclusions<a class="headerlink" href="#initial-conclusions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Solution seems to not have an effect on choice.</p></li>
+<li><p>Side seems to not have an effect on choice.</p></li>
+<li><p>Odour seems to not have an effect on choice.</p></li>
+</ul>
+</div>
+<div class="section" id="brain-lateralisation-vs-visual-cues">
+<h2>Brain lateralisation VS Visual Cues<a class="headerlink" href="#brain-lateralisation-vs-visual-cues" title="Permalink to this headline">¶</a></h2>
+<p><strong>This setup had the wall on the Left!</strong></p>
+</div>
+<div class="section" id="model-averaging">
+<h2>Model averaging<a class="headerlink" href="#model-averaging" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">confset</span><span class="p">(</span><span class="n">cand.set</span> <span class="o">=</span> <span class="n">cand_models</span><span class="p">)</span> <span class="c1"># Remove models that explain the last 0.05 Cum.Wt</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><dl>
+	<dt>$method</dt>
+		<dd>'raw'</dd>
+	<dt>$level</dt>
+		<dd>0.95</dd>
+	<dt>$table</dt>
+		<dd><table class="dataframe">
+<caption>A aictab: 4 × 8</caption>
+<thead>
+	<tr><th></th><th scope=col>Modnames</th><th scope=col>K</th><th scope=col>AICc</th><th scope=col>Delta_AICc</th><th scope=col>ModelLik</th><th scope=col>AICcWt</th><th scope=col>LL</th><th scope=col>Cum.Wt</th></tr>
+	<tr><th></th><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><th scope=row>1</th><td>null_mod    </td><td>4</td><td>109.1643</td><td>0.000000</td><td>1.0000000</td><td>0.4625516</td><td>-50.36239</td><td>0.4625516</td></tr>
+	<tr><th scope=row>2</th><td>solution_mod</td><td>5</td><td>110.8627</td><td>1.698326</td><td>0.4277728</td><td>0.1978670</td><td>-50.09800</td><td>0.6604186</td></tr>
+	<tr><th scope=row>4</th><td>odour_mod   </td><td>5</td><td>111.2853</td><td>2.120914</td><td>0.3462976</td><td>0.1601805</td><td>-50.30930</td><td>0.8205991</td></tr>
+	<tr><th scope=row>3</th><td>side_mod    </td><td>5</td><td>111.3165</td><td>2.152136</td><td>0.3409335</td><td>0.1576993</td><td>-50.32491</td><td>0.9782984</td></tr>
+</tbody>
+</table>
+</dd>
+</dl>
+</div></div>
+</div>
+<p>There is no clearly better model!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">top_models</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="s">&quot;null_mod&quot;</span> <span class="o">=</span> <span class="n">null_mod</span><span class="p">,</span> 
+                   <span class="s">&quot;solution_mod&quot;</span> <span class="o">=</span> <span class="n">solution_mod</span><span class="p">,</span>
+                   <span class="s">&quot;odour_mod&quot;</span> <span class="o">=</span> <span class="n">odour_mod</span><span class="p">,</span>
+                   <span class="s">&quot;side_mod&quot;</span> <span class="o">=</span> <span class="n">side_mod</span><span class="p">)</span>
+
+<span class="nf">modavgShrink</span><span class="p">(</span><span class="n">top_models</span><span class="p">,</span> <span class="n">parm</span> <span class="o">=</span> <span class="s">&quot;(Intercept)&quot;</span><span class="p">)</span>
+<span class="nf">modavgShrink</span><span class="p">(</span><span class="n">top_models</span><span class="p">,</span> <span class="n">parm</span> <span class="o">=</span> <span class="s">&quot;SolutionCaffeine&quot;</span><span class="p">)</span>
+<span class="nf">modavgShrink</span><span class="p">(</span><span class="n">top_models</span><span class="p">,</span> <span class="n">parm</span> <span class="o">=</span> <span class="s">&quot;Reward_SideR&quot;</span><span class="p">)</span>
+<span class="nf">modavgShrink</span><span class="p">(</span><span class="n">top_models</span><span class="p">,</span> <span class="n">parm</span> <span class="o">=</span> <span class="s">&quot;Reward_OdourStrawberry&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><dl>
+	<dt>$Parameter</dt>
+		<dd>'(Intercept)'</dd>
+	<dt>$Mod.avg.table</dt>
+		<dd><table class="dataframe">
+<caption>A aictab: 4 × 9</caption>
+<thead>
+	<tr><th scope=col>Modnames</th><th scope=col>K</th><th scope=col>AICc</th><th scope=col>Delta_AICc</th><th scope=col>ModelLik</th><th scope=col>AICcWt</th><th scope=col>LL</th><th scope=col>Beta_est</th><th scope=col>SE</th></tr>
+	<tr><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><td>null_mod    </td><td>4</td><td>109.1643</td><td>0.000000</td><td>1.0000000</td><td>0.4728124</td><td>-50.36239</td><td>1.311686</td><td>0.3062711</td></tr>
+	<tr><td>solution_mod</td><td>5</td><td>110.8627</td><td>1.698326</td><td>0.4277728</td><td>0.2022563</td><td>-50.09800</td><td>1.498966</td><td>0.4078067</td></tr>
+	<tr><td>odour_mod   </td><td>5</td><td>111.2853</td><td>2.120914</td><td>0.3462976</td><td>0.1637338</td><td>-50.30930</td><td>1.404561</td><td>0.4291338</td></tr>
+	<tr><td>side_mod    </td><td>5</td><td>111.3165</td><td>2.152136</td><td>0.3409335</td><td>0.1611976</td><td>-50.32491</td><td>1.382733</td><td>0.4059587</td></tr>
+</tbody>
+</table>
+</dd>
+	<dt>$Mod.avg.beta</dt>
+		<dd>1.37622371866755</dd>
+	<dt>$Uncond.SE</dt>
+		<dd>0.373978955206061</dd>
+	<dt>$Conf.level</dt>
+		<dd>0.95</dd>
+	<dt>$Lower.CL</dt>
+		<dd>0.643238435487751</dd>
+	<dt>$Upper.CL</dt>
+		<dd>2.10920900184735</dd>
+</dl>
+</div><div class="output text_html"><dl>
+	<dt>$Parameter</dt>
+		<dd>'SolutionCaffeine'</dd>
+	<dt>$Mod.avg.table</dt>
+		<dd><table class="dataframe">
+<caption>A aictab: 4 × 9</caption>
+<thead>
+	<tr><th scope=col>Modnames</th><th scope=col>K</th><th scope=col>AICc</th><th scope=col>Delta_AICc</th><th scope=col>ModelLik</th><th scope=col>AICcWt</th><th scope=col>LL</th><th scope=col>Beta_est</th><th scope=col>SE</th></tr>
+	<tr><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><td>null_mod    </td><td>4</td><td>109.1643</td><td>0.000000</td><td>1.0000000</td><td>0.4728124</td><td>-50.36239</td><td> 0.0000000</td><td>0.0000000</td></tr>
+	<tr><td>solution_mod</td><td>5</td><td>110.8627</td><td>1.698326</td><td>0.4277728</td><td>0.2022563</td><td>-50.09800</td><td>-0.3624844</td><td>0.4999642</td></tr>
+	<tr><td>odour_mod   </td><td>5</td><td>111.2853</td><td>2.120914</td><td>0.3462976</td><td>0.1637338</td><td>-50.30930</td><td> 0.0000000</td><td>0.0000000</td></tr>
+	<tr><td>side_mod    </td><td>5</td><td>111.3165</td><td>2.152136</td><td>0.3409335</td><td>0.1611976</td><td>-50.32491</td><td> 0.0000000</td><td>0.0000000</td></tr>
+</tbody>
+</table>
+</dd>
+	<dt>$Mod.avg.beta</dt>
+		<dd>-0.0733147446574229</dd>
+	<dt>$Uncond.SE</dt>
+		<dd>0.267875401146563</dd>
+	<dt>$Conf.level</dt>
+		<dd>0.95</dd>
+	<dt>$Lower.CL</dt>
+		<dd>-0.598340883248906</dd>
+	<dt>$Upper.CL</dt>
+		<dd>0.45171139393406</dd>
+</dl>
+</div><div class="output text_html"><dl>
+	<dt>$Parameter</dt>
+		<dd>'Reward_SideR'</dd>
+	<dt>$Mod.avg.table</dt>
+		<dd><table class="dataframe">
+<caption>A aictab: 4 × 9</caption>
+<thead>
+	<tr><th scope=col>Modnames</th><th scope=col>K</th><th scope=col>AICc</th><th scope=col>Delta_AICc</th><th scope=col>ModelLik</th><th scope=col>AICcWt</th><th scope=col>LL</th><th scope=col>Beta_est</th><th scope=col>SE</th></tr>
+	<tr><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><td>null_mod    </td><td>4</td><td>109.1643</td><td>0.000000</td><td>1.0000000</td><td>0.4728124</td><td>-50.36239</td><td> 0.0000000</td><td>0.0000000</td></tr>
+	<tr><td>solution_mod</td><td>5</td><td>110.8627</td><td>1.698326</td><td>0.4277728</td><td>0.2022563</td><td>-50.09800</td><td> 0.0000000</td><td>0.0000000</td></tr>
+	<tr><td>odour_mod   </td><td>5</td><td>111.2853</td><td>2.120914</td><td>0.3462976</td><td>0.1637338</td><td>-50.30930</td><td> 0.0000000</td><td>0.0000000</td></tr>
+	<tr><td>side_mod    </td><td>5</td><td>111.3165</td><td>2.152136</td><td>0.3409335</td><td>0.1611976</td><td>-50.32491</td><td>-0.1363383</td><td>0.4978865</td></tr>
+</tbody>
+</table>
+</dd>
+	<dt>$Mod.avg.beta</dt>
+		<dd>-0.021977395634133</dd>
+	<dt>$Uncond.SE</dt>
+		<dd>0.206089245872009</dd>
+	<dt>$Conf.level</dt>
+		<dd>0.95</dd>
+	<dt>$Lower.CL</dt>
+		<dd>-0.425904895144291</dd>
+	<dt>$Upper.CL</dt>
+		<dd>0.381950103876025</dd>
+</dl>
+</div><div class="output text_html"><dl>
+	<dt>$Parameter</dt>
+		<dd>'Reward_OdourStrawberry'</dd>
+	<dt>$Mod.avg.table</dt>
+		<dd><table class="dataframe">
+<caption>A aictab: 4 × 9</caption>
+<thead>
+	<tr><th scope=col>Modnames</th><th scope=col>K</th><th scope=col>AICc</th><th scope=col>Delta_AICc</th><th scope=col>ModelLik</th><th scope=col>AICcWt</th><th scope=col>LL</th><th scope=col>Beta_est</th><th scope=col>SE</th></tr>
+	<tr><th scope=col>&lt;chr&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th><th scope=col>&lt;dbl&gt;</th></tr>
+</thead>
+<tbody>
+	<tr><td>null_mod    </td><td>4</td><td>109.1643</td><td>0.000000</td><td>1.0000000</td><td>0.4728124</td><td>-50.36239</td><td> 0.0000000</td><td>0.0000000</td></tr>
+	<tr><td>solution_mod</td><td>5</td><td>110.8627</td><td>1.698326</td><td>0.4277728</td><td>0.2022563</td><td>-50.09800</td><td> 0.0000000</td><td>0.0000000</td></tr>
+	<tr><td>odour_mod   </td><td>5</td><td>111.2853</td><td>2.120914</td><td>0.3462976</td><td>0.1637338</td><td>-50.30930</td><td>-0.1664771</td><td>0.5116158</td></tr>
+	<tr><td>side_mod    </td><td>5</td><td>111.3165</td><td>2.152136</td><td>0.3409335</td><td>0.1611976</td><td>-50.32491</td><td> 0.0000000</td><td>0.0000000</td></tr>
+</tbody>
+</table>
+</dd>
+	<dt>$Mod.avg.beta</dt>
+		<dd>-0.0272579309445051</dd>
+	<dt>$Uncond.SE</dt>
+		<dd>0.215991350630738</dd>
+	<dt>$Conf.level</dt>
+		<dd>0.95</dd>
+	<dt>$Lower.CL</dt>
+		<dd>-0.450593199152914</dd>
+	<dt>$Upper.CL</dt>
+		<dd>0.396077337263903</dd>
+</dl>
+</div></div>
+</div>
+</div>
+<div class="section" id="odds">
+<h2>Odds<a class="headerlink" href="#odds" title="Permalink to this headline">¶</a></h2>
+<p><strong>If the odds is 1 there is no effect, therefore if the CI’s cross 1 that is not a significant parameter</strong></p>
+<p><strong>Intercept</strong> = 4.0 [1.9, 8.2] -&gt; <strong>Ants do not choose an arm of the Y-maze randomly!</strong></p>
+<p><strong>Solution</strong> = 0.9 [0.5, 1.6] -&gt; There is no effect of Solution!</p>
+<p><strong>Side</strong> = 1.0 [0.7, 1.5] -&gt; There is no effect of Side!</p>
+<p><strong>Odour</strong> = 1.0 [0.6, 1.5] -&gt; There is no effect of Odour!</p>
+</div>
+<div class="section" id="conclusions">
+<h2>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Ants do not choose a random side of the Y-maze. They learn to associate the odour with the reward.</p></li>
+<li><p>There is no difference between the two odours.</p></li>
+<li><p>There is no efect of caffeine.</p></li>
+<li><p>There is no side bias.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "r"
+        },
+        kernelOptions: {
+            kernelName: "ir",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Dopamine_MK01.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Dopamine Side Learning Y-maze</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="3d_parts.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">3D Printing</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Henrique Galante<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
