@@ -1,0 +1,53 @@
+flowerID: f1 #change for every flower
+hubIP: 192.168.0.2 #be sure it points to the mosquitto server
+
+colors:
+  red:
+    - 255
+    - 0
+    - 0
+  green:
+    - 0
+    - 255
+    - 0
+  blue:
+    - 0
+    - 0
+    - 255
+  greenlike:
+    - 0
+    - 200
+    - 55
+  bluelike:
+    - 0
+    - 55
+    - 200
+  yellow:
+    - 127
+    - 127
+    - 0
+  purple:
+    - 127
+    - 0
+    - 127
+
+pins:
+  redLed: 13
+  blueLed: 5
+  greenLed: 6
+  motor1fwd: 15
+  motor1bkw: 14
+  motor2fwd: 23
+  motor2bkw: 18
+  motor3fwd: 27
+  motor3bkw: 22
+  motor4fwd: 26
+  motor4bkw: 19
+  motorClk1: 25
+  motorDt1: 24
+  motorClk2: 7
+  motorDt2: 8
+  motorClk3: 16
+  motorDt3: 12
+  motorClk4: 21
+  motorDt4: 20
