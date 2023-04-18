@@ -55,7 +55,7 @@ In this version: the roboflowers are stable and work well!
 
 ### V2023.04.13:
 Next changes:
-- added videos saved everytime a bumblebee enters a flower in learning mode
+- adding videos saved everytime a bumblebee enters a flower in learning mode
 - videos are displayed on the HUB in learning mode
-- added a check in colonyLearn mode for flowers currently connected to MQTT
-- (added a time.sleep between each motor step/change the 0.045 constant for the deliver method)
+- adding a check in colonyLearn mode for flowers currently connected to MQTT
+- (adding a time.sleep between each motor step/change the 0.045 constant for the deliver method)
