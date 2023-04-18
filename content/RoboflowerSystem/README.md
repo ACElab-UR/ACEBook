@@ -29,7 +29,7 @@ Track the changes brought to the Roboflowers in each version:
 
 ### V2023.03.12:
 - all python modules are now annotated for clarity
-- pumps now have individual calibration rather than one calibration for all 4 pumps per flowern
+- pumps now have individual calibration rather than one calibration for all 4 pumps per flower
 - new operating system for the roboflowers:
 	- latest upgrades and updates for packages
 - main.py of the HUB re-written in a simpler way
