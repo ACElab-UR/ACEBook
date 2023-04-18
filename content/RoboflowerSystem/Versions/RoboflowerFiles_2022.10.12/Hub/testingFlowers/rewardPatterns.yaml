@@ -1,0 +1,88 @@
+1:
+  bees: [0, 1, 2, 3, 4, 5]
+  A:
+    quality: 1000 #in millimol
+    quantity: 6000 #in ul/1000
+    scent: unscented
+    retention: 60
+  B:
+    quality: 1000
+    quantity: 120000
+    scent: unscented
+    retention: 60
+  C:
+    quality: 0
+    quantity: 80000
+    scent: unscented
+    retention: 60
+  D:
+    quality: 1000
+    quantity: 60000
+    scent: unscented
+    retention: 60
+2:
+  bees: [6, 7, 8, 9, 18, 19, 20, 21, 22, 23, 24, 25, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]
+  A:
+    quality: 1000
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  B:
+    quality: 0
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  C:
+    quality: 0
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  D:
+    quality: 1000
+    quantity: 50000
+    scent: unscented
+    retention: 60
+3:
+  bees: [101]
+  A:
+    quality: 0
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  B:
+    quality: 1000
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  C:
+    quality: 0
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  D:
+    quality: 1000
+    quantity: 50000
+    scent: unscented
+    retention: 60
+4:
+  bees: [102]
+  A:
+    quality: 0
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  B:
+    quality: 1000
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  C:
+    quality: 0
+    quantity: 50000
+    scent: unscented
+    retention: 60
+  D:
+    quality: 1000
+    quantity: 50000
+    scent: unscented
+    retention: 60

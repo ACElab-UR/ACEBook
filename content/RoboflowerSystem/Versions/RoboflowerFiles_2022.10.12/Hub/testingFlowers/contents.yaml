@@ -1,0 +1,32 @@
+A:
+  1:
+    quality: 1000
+    scent: unscented
+  2:
+    quality: 0
+    scent: unscented
+  color: blue
+B:
+  1:
+    quality: 1000
+    scent: unscented
+  2:
+    quality: 0
+    scent: unscented
+  color: green
+C:
+  1:
+    quality: 1000
+    scent: unscented
+  2:
+    quality: 250
+    scent: unscented
+  color: bluelike
+D:
+  1:
+    quality: 1000
+    scent: unscented
+  2:
+    quality: 250
+    scent: unscented
+  color: greenlike
