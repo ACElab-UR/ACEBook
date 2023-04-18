@@ -11,9 +11,9 @@ Please refer to this document before using the Roboflowers.
 ### Instructions
 Find the readme files to assemble, program and debug the Roboflowers:
 
-Programming.md
-Assemblingflowers.md
-Harware.md
+- Programming.md
+- Assemblingflowers.md
+- Harware.md
 
 ### Versions
 Find the annotated python modules for each Roboflowers' version
