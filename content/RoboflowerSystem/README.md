@@ -45,10 +45,19 @@ Track the changes brought to the Roboflowers in each version:
 	- addition of the parameter "duration" in the blink method
 	- precision of the exact volumes delivered in the priming routine in the "prime" function
 
-### V2023.04.06:
+### V2023.04.13:
 In this version: the roboflowers are stable and work well!
 - corrected the "too many values to unpack" bugs in routines.py
 - fixed the on_disconnect function in both connect.py
 - all modules further annotated for clarity
 - improved the way log and debug files are written
 - corrected the camera error in colonylearn
+
+### V2023.05.04:
+- in Electronics:
+ 	- increased the amount flushed out by the empty pump from 20 to 25ul (to avoid any leaking risk due to calibration inprecision
+ 	- in the clean() function, empty pump now flushes out 25ul instead of 21ul 
+ 	- changed back the "error" from -100/100 to -95/95 for the pumps
+- hardware:
+ 	- changed the big milkers for glass bottles which are no longer suspended above the flowers (reduce capillary action in the tubes + risk of flooding the flowers)
+ 	- removed the glass pieces in the flowers because of condensation and droplets
