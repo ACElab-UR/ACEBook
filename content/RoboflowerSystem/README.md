@@ -55,9 +55,12 @@ In this version: the roboflowers are stable and work well!
 
 ### V2023.05.04:
 - in Electronics:
- 	- increased the amount flushed out by the empty pump from 20 to 25ul (to avoid any leaking risk due to calibration inprecision
+ 	- increased the amount flushed out by the empty pump from 20 to 25ul (to avoid any leaking risk due to calibration imprecision)
  	- in the clean() function, empty pump now flushes out 25ul instead of 21ul 
  	- changed back the "error" from -100/100 to -95/95 for the pumps
 - hardware:
  	- changed the big milkers for glass bottles which are no longer suspended above the flowers (reduce capillary action in the tubes + risk of flooding the flowers)
  	- removed the glass pieces in the flowers because of condensation and droplets
+
+### V2023.05.16:
+- fixed 
